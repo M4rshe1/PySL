@@ -2,53 +2,76 @@ import csv
 import pandas as pd
 import os
 import sys
+from tkinter import filedialog
+# import easygui
+import tkinter as tk
+import re
+import time
 
 
 def convert():
-    wordslist = [{"word": "", "anzahl": 0}]
-    with open(".\dancin.txt") as file_in:
+    filename = ""
+    wordslist = [{"word": "null", "count": 0}]
+    txt_file = open_window("txt")
+    with open(txt_file) as file_in:
         filename = os.path.basename(file_in.name).split(".")[0]
         for line in file_in:
             for words in line.split():
+                words = re.sub(r"[,\(\)\[\]\{\}<>]", "", words)
                 found = False
                 for wordListItem in wordslist:
-                    if wordListItem["word"] == words:
-                        wordListItem["anzahl"] += 1
+                    if wordListItem["word"] == words.lower():
+                        wordListItem["count"] += 1
                         found = True
                         break
                 if not found:
-                    wordslist.append({"word": words, "anzahl": 1})
+                    wordslist.append({"word": words.lower(), "count": 1})
+        file_in.close()
 
-    sorted_wordslist = sorted(wordslist, key=lambda x: x["anzahl"], reverse=True)
+    sorted_wordslist = sorted(wordslist, key=lambda x: x["count"], reverse=True)
 
     with open(filename + '.csv', 'w', newline='') as csvfile:
-        fieldnames = ['word', 'anzahl']
+        fieldnames = ['word', 'count']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
 
         writer.writeheader()
-        for worditems in sorted_wordslist:
-            writer.writerow(worditems)
+        for word_items in sorted_wordslist:
+            writer.writerow(word_items)
         csvfile.close()
 
 
-def load():
-    InputFile = input("Enter full name of File: ")
-    if not InputFile.find(".csv"):
-        InputFile += ".csv"
-
-    csvfile = pd.read_csv(InputFile)
+def load_csv():
+    input_file = open_window("csv")
+    csvfile = pd.read_csv(input_file)
     print(csvfile)
 
 
-while True:
-    callFunction = input("What would you like to do? (L)oad or (C)onvert: ")
-    # print(callFunction)
-    if callFunction.lower().find("c") != -1:
-        convert()
-    elif callFunction.lower().find("l") != -1:
-        load()
-    elif callFunction.lower().find("quit") != -1:
-        sys.exit()
+def open_window(file_type):
+    root = tk.Tk()
+    root.withdraw()
+
+    file_path = filedialog.askopenfilename(
+        title="Select a File",
+        filetypes=[("Text files", "*.{}".format(file_type))]
+    )
+
+    root.destroy()
+    return file_path
 
 
-# print(wordslist)
+try:
+    while True:
+        callFunction = input("What would you like to do? (L)oad or (C)onvert: ")
+        # print(callFunction)
+        if callFunction.lower().find("c") != -1:
+            convert()
+            sys.exit()
+
+        elif callFunction.lower().find("l") != -1:
+            load_csv()
+            sys.exit()
+
+        elif callFunction.lower().find("quit") != -1:
+            sys.exit()
+except Exception as e:
+    print(e)
