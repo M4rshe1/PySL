@@ -1,0 +1,5 @@
+tkinter
+subprocess
+json
+os
+paramiko
