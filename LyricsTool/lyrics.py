@@ -30,7 +30,7 @@ def convert():
 
 
 def load():
-    InputFile = input("Enter full name of File")
+    InputFile = input("Enter full name of File: ")
     if not InputFile.find(".csv"):
         InputFile += ".csv"
 
@@ -41,9 +41,9 @@ def load():
 while True:
     callFunction = input("What would you like to do? (L)oad or (C)onvert: ")
     print(callFunction)
-    if callFunction.lower() == "c":
+    if callFunction.lower().find("c"):
         convert()
-    elif callFunction.lower() == "l":
+    elif callFunction.lower().find("l"):
         load()
 
 # print(wordslist)
