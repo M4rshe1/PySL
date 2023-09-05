@@ -1,6 +1,7 @@
 import csv
 import pandas as pd
 import os
+import sys
 
 
 def convert():
@@ -20,13 +21,14 @@ def convert():
 
     sorted_wordslist = sorted(wordslist, key=lambda x: x["anzahl"], reverse=True)
 
-    with open('words.csv', 'w', newline='') as csvfile:
+    with open(filename + '.csv', 'w', newline='') as csvfile:
         fieldnames = ['word', 'anzahl']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
 
         writer.writeheader()
         for worditems in sorted_wordslist:
             writer.writerow(worditems)
+        csvfile.close()
 
 
 def load():
@@ -40,10 +42,13 @@ def load():
 
 while True:
     callFunction = input("What would you like to do? (L)oad or (C)onvert: ")
-    print(callFunction)
-    if callFunction.lower().find("c"):
+    # print(callFunction)
+    if callFunction.lower().find("c") != -1:
         convert()
-    elif callFunction.lower().find("l"):
+    elif callFunction.lower().find("l") != -1:
         load()
+    elif callFunction.lower().find("quit") != -1:
+        sys.exit()
+
 
 # print(wordslist)
