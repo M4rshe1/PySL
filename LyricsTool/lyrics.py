@@ -3,10 +3,8 @@ import pandas as pd
 import os
 import sys
 from tkinter import filedialog
-# import easygui
 import tkinter as tk
 import re
-import time
 
 
 def convert():
@@ -43,7 +41,9 @@ def convert():
 def load_csv():
     input_file = open_window("csv")
     csvfile = pd.read_csv(input_file)
-    print(csvfile)
+    for csvline in csvfile:
+        print(csvline)
+    input()
 
 
 def open_window(file_type):
