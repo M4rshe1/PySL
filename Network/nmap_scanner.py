@@ -32,10 +32,10 @@ def print_nmap_result(scanned_hosts, ip_address):
               f"Name: {port_name:<15}Product: {port_product:<20}Version: {port_version}")
 
         # Append the port and version information to the file
-        open(f'scans/{date_time}.txt', 'a').write(f"Port: {port:<5}\tState: {port_state:<10} | "
-                                                  f"Name: {port_name:<15}Product: {port_product:<20}Version: {port_version}\n")
+        open(f'scans/NMAP-{date_time}.txt', 'a').write(f"Port: {port:<5}\tState: {port_state:<10} | "
+                                                       f"Name: {port_name:<15}Product: {port_product:<20}Version: {port_version}\n")
         # close the file
-    open(f'scans/{date_time}.txt', 'a').close()
+    open(f'scans/NMAP-{date_time}.txt', 'a').close()
 
 
 # Scan a specific ip address for open ports and the version of the services that are running on those ports

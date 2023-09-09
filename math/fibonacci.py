@@ -13,4 +13,4 @@ def fib(n):
     print()
 
 
-fib(int(input("How many do you want? : ")))
+fib(int(input("How many do you want? \n>> ")))
