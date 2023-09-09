@@ -8,5 +8,4 @@ env
 /coverter/coverter/*.spec
 /coverter/images/
 /Network/scans/
-#/coverter/dist/
 /coverter/build/

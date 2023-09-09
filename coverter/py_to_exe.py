@@ -36,6 +36,10 @@ def convert_py_to_exe(file_path):
         subprocess.call(
             f"pyinstaller --onefile --windowed {file_path}")
     print("Done")
+    # delete all .spec files
+    for file in os.listdir():
+        if file.endswith(".spec"):
+            os.remove(file)
 
 
 file_selected = select_file()
