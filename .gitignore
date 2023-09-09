@@ -3,4 +3,10 @@
 /.idea
 /_test/
 env
-/Network/scans/*.*
+*.spec
+/coverter/coverter/
+/coverter/coverter/*.spec
+/coverter/images/
+/Network/scans/
+#/coverter/dist/
+/coverter/build/
