@@ -17,5 +17,6 @@ def get_mac_address(ip_address):
             return nm[host]['addresses']['mac']
 
 
-ipaddress = input("enter ip address: \n>>")
+ipaddress = input("Enter ip address of the Host you want the MAC address: \n>>")
 print(get_mac_address(ipaddress))
+input("Press any key to exit")

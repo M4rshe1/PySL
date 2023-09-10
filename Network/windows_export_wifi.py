@@ -1,7 +1,6 @@
 import os
 import subprocess
 import csv
-from time import sleep
 
 
 def export_profiles(mode):
@@ -23,6 +22,13 @@ def export_profiles(mode):
         os.remove("scans/" + filename)
     print("---------------------------------------")
     # Iterate through the profiles and retrieve their passwords
+
+    if not os.path.exists("scans/" + filename):
+        csvfile = open("scans/" + filename, "w", newline="")
+        fieldnames = ['profile', 'password']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
+        writer.writeheader()
+
     for profile_name in profile_names:
         # print(profile_name)
         try:
@@ -40,11 +46,7 @@ def export_profiles(mode):
                 print(f"Password  :  {password}")
                 print("---------------------------------------")
 
-            if not os.path.exists("scans/" + filename):
-                with open("scans/" + filename, "w", newline="") as csvfile:
-                    fieldnames = ['profile', 'password']
-                    writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
-                    writer.writeheader()
+                writer.writerow({'profile': profile_name, 'password': password})
 
         except subprocess.CalledProcessError as e:
             print(f"Error retrieving password for profile {profile_name}: {e}")

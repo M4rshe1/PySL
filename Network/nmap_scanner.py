@@ -16,10 +16,44 @@ def print_nmap_result(scanned_hosts, ip_address):
         # If not create the folder
         os.mkdir('scans')
     date_time = datetime.now().strftime("%m.%d.%Y_%H-%M-%S")
+    
+    filename = f'scans/NMAP-{date_time}_({ip_address}).txt'
+    
     # Write the command run to the file in the scans folder
-    open(f'scans/{date_time}.txt', 'w').write("Command Run: " + nm.command_line() + "\n\n\n")
+    open(filename, 'a').write("Command Run: " + nm.command_line() + "\n\n\n")
     # Filename is the Date and Time of the scan
 
+    # Print the OS information using the scanned_hosts variable
+    print(f"Host: {ip_address}\tStatus: {scanned_hosts['scan'][ip_address]['status']['state']}")
+    # print mac address if it is found
+    if len(scanned_hosts['scan'][ip_address]['addresses']['mac']) > 0:
+        print(f"MAC Address: {scanned_hosts['scan'][ip_address]['addresses']['mac']}")
+    # print device vendor if it is found
+    if len(scanned_hosts['scan'][ip_address]['vendor']) > 0:
+        print(f"Vendor: {scanned_hosts['scan'][ip_address]['vendor']}")
+    print(f"OS: {scanned_hosts['scan'][ip_address]['osmatch'][0]['name']}")
+    print(f"OS Accuracy: {scanned_hosts['scan'][ip_address]['osmatch'][0]['accuracy']}")
+    print(f"OS Type: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['type']}")
+    print(f"OS Vendor: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['vendor']}")
+    print(f"OS Family: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osfamily']}")
+    print(f"OS Generation: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osgen']}")
+    # print os distribution like ubuntu or arch if it is found
+    if len(scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['cpe']) > 0:
+        print(f"OS Distribution: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['cpe'][0]}")
+    print("-" * 100)
+    # Append the OS information to the file
+    open(filename, 'a').write(f"Host: {ip_address}\tStatus: {scanned_hosts['scan'][ip_address]['status']['state']}\n")
+    if len(scanned_hosts['scan'][ip_address]['addresses']['mac']) > 0:
+        open(filename, 'a').write(f"MAC Address: {scanned_hosts['scan'][ip_address]['addresses']['mac']}\n")
+    if len(scanned_hosts['scan'][ip_address]['vendor']) > 0:
+        open(filename, 'a').write(f"Vendor: {scanned_hosts['scan'][ip_address]['vendor']}\n")
+    open(filename, 'a').write(f"OS: {scanned_hosts['scan'][ip_address]['osmatch'][0]['name']}\n")
+    open(filename, 'a').write(f"OS Accuracy: {scanned_hosts['scan'][ip_address]['osmatch'][0]['accuracy']}\n")
+    open(filename, 'a').write(f"OS Type: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['type']}\n")
+    open(filename, 'a').write(f"OS Vendor: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['vendor']}\n")
+    open(filename, 'a').write(f"OS Family: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osfamily']}\n")
+    open(filename, 'a').write(f"OS Generation: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osgen']}\n")
+    open(filename, 'a').write("-" * 100 + "\n")
     # Print port and version information using the scanned_ports_versions variable
     for port in scanned_hosts['scan'][ip_address]['tcp']:
         port_info = scanned_hosts['scan'][ip_address]['tcp'][port]
@@ -28,14 +62,14 @@ def print_nmap_result(scanned_hosts, ip_address):
         port_product = port_info['product']
         port_version = port_info['version']
 
-        print(f"Port: {port:<5}\tState: {port_state:<10} | "
-              f"Name: {port_name:<15}Product: {port_product:<20}Version: {port_version}")
+        print(f"Port: {port:<5}\tState: {port_state:<10}"
+              f"Name: {port_name:<15}Product: {port_product:<30}Version: {port_version}")
 
         # Append the port and version information to the file
-        open(f'scans/NMAP-{date_time}.txt', 'a').write(f"Port: {port:<5}\tState: {port_state:<10} | "
-                                                       f"Name: {port_name:<15}Product: {port_product:<20}Version: {port_version}\n")
+        open(filename, 'a').write(f"Port: {port:<5}\tState: {port_state:<10}"
+                                  f"Name: {port_name:<15}Product: {port_product:<30}Version: {port_version}\n")
         # close the file
-    open(f'scans/NMAP-{date_time}.txt', 'a').close()
+    open(filename, 'a').close()
 
 
 # Scan a specific ip address for open ports and the version of the services that are running on those ports
@@ -44,11 +78,12 @@ def nmap_scan_specific_ip():
         ip_add_entered = input("\nPlease enter the ip address that you want to scan: \n>> ")
         if ip_add_pattern.search(ip_add_entered):
             print(f"{ip_add_entered} is valid, scanning...")
+            print("Know that this scan can take a while...")
             break
 
     try:
         scanned_ports_versions = nm.scan(ip_add_entered, arguments='-p- -sV -sS -O')
-        print("Command Run: " + nm.command_line() + " \n")
+        print("\nCommand Run: " + nm.command_line() + " \n")
         print_nmap_result(scanned_ports_versions, ip_add_entered)
 
     except Exception as e:
@@ -60,6 +95,7 @@ def nmap_scan_specific_port():
         ip_add_entered = input("\nPlease enter the ip address that you want to scan: \n>> ")
         if ip_add_pattern.search(ip_add_entered):
             print(f"{ip_add_entered} is valid, scanning...  ")
+            print("Know that this scan can take a while...")
             break
 
     while True:
@@ -77,7 +113,7 @@ def nmap_scan_specific_port():
     try:
         print(f"Scanning {ip_add_entered} for ports {entered_ports}")
         scanned_ports_versions = nm.scan(ip_add_entered, arguments='-p' + entered_ports + ' -sV -sS -O')
-        print("Command Run: " + nm.command_line() + " \n")
+        print("\nCommand Run: " + nm.command_line() + " \n")
         print_nmap_result(scanned_ports_versions, ip_add_entered)
     except Exception as e:
         input(e)
@@ -89,10 +125,12 @@ def nmap_scan_discover():
         ip_range = input("\nPlease enter the ip range you want to scan (ex. 192.168.1.0/24): \n>>")
         if ip_range_pattern.search(ip_range):
             print(f"{ip_range} is a valid, scanning...")
+            print("Know that this scan can take a while depending on the size of the network.")
+            print("It could also miss some hosts if they are not configured to respond to ping requests.")
             break
     try:
-        nm.scan(hosts=ip_range, arguments='-n -sP -PE -PA21,23,80,3389')
-        print("Command Run: " + nm.command_line() + " \n")
+        nm.scan(hosts=ip_range, arguments='-n -sP -PE -PA21,23,80,3389 -T4 --max-retries 5 --max-scan-delay 5000ms')
+        print("\nCommand Run: " + nm.command_line() + " \n")
         hosts_list = [(x, nm[x]['status']['state']) for x in nm.all_hosts()]
         for host, status in hosts_list:
             print('{0}:{1}'.format(host, status))

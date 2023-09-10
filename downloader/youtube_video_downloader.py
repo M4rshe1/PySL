@@ -1,5 +1,3 @@
-# script to download youtube videos
-
 from pytube import YouTube
 from pytube import Playlist
 import os
@@ -18,7 +16,6 @@ if not os.path.exists("downloads/youtube"):
 def download_audio(link, do_playlist):
 
     # download playlist
-    # print(do_playlist)
     if do_playlist:
         try:
             youtube_playlist = Playlist(link)

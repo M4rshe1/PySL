@@ -1,11 +1,9 @@
 # script to download instagram images
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 import requests
-from bs4 import BeautifulSoup
 import os
 
 # check if download/instagram folder exists
@@ -67,7 +65,7 @@ def download_image(file_url, set_file_name):
         img_file.write(response.content)
 
 
-def main():
+def from_post_link():
     post_url = input("Enter the image url: \n>> ")
     image_content = find_image_url(post_url)
     # print(image_url)
@@ -75,25 +73,29 @@ def main():
         download_image(image_content, post_url.split("/")[-2])
 
 
+def from_urls_file():
+    input("Name the file urls.txt and place it in the same folder as this script. Press Enter to continue...")
+    with open("urls.txt", "r") as file:
+        total_lines = sum(1 for _ in file)
+        file.seek(0)  # Reset file position to the beginning
+
+        for line_number, line in enumerate(file, start=1):
+            url = line.strip()
+            file_name = url.split("/")[-2]
+            image_url = find_image_url(url)
+
+            if image_url is not None:
+                download_image(image_url, file_name)
+                print(f"Processed line {line_number} of {total_lines}")
+        print("Done!")
+
+
 if __name__ == "__main__":
     while True:
         mode = input("Enter 1 to download image from Post URL, 2 for URLs in file: \n>> ")
         if mode == "1":
-            main()
+            from_post_link()
             break
         elif mode == "2":
-            input("Name the file urls.txt and place it in the same folder as this script. Press Enter to continue...")
-            with open("urls.txt", "r") as file:
-                total_lines = sum(1 for line in file)
-                file.seek(0)  # Reset file position to the beginning
-
-                for line_number, line in enumerate(file, start=1):
-                    url = line.strip()
-                    file_name = url.split("/")[-2]
-                    image_url = find_image_url(url)
-
-                    if image_url is not None:
-                        download_image(image_url, file_name)
-                        print(f"Processed line {line_number} of {total_lines}")
-                print("Done!")
-                break
+            from_urls_file()
+            break

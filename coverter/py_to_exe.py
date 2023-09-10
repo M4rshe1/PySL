@@ -9,8 +9,12 @@ def select_file():
     # Hide the Tkinter GUI
     root = tk.Tk()
     root.withdraw()
-    file_path = filedialog.askopenfilename(initialdir="/", title="Select a file",
-                                           filetypes=(("Python", "*.py"), ("All files", "*.*")))
+    # multiple files can be selected
+    file_path = filedialog.askopenfilenames(title="Select a file",
+                                            filetypes=(("Python", "*.py"), ("All files", "*.*")))
+
+    # file_path = filedialog.askopenfilename(initialdir="/", title="Select a file",
+    #                                        filetypes=(("Python", "*.py"), ("All files", "*.*")))
     # Break if a file is selected
     # kill the program if no file is selected
     if file_path == "":
@@ -31,16 +35,17 @@ def convert_py_to_exe(file_path):
     # print(icon_path)
     if os.path.exists(icon_path):
         subprocess.call(
-            f"pyinstaller --onefile --windowed --icon={icon_path} {file_path}")
+            f"pyinstaller --onefile --icon={icon_path} {file_path}")
     else:
         subprocess.call(
-            f"pyinstaller --onefile --windowed {file_path}")
+            f"pyinstaller --onefile {file_path}")
     print("Done")
     # delete all .spec files
-    for file in os.listdir():
-        if file.endswith(".spec"):
-            os.remove(file)
+    for files in os.listdir():
+        if files.endswith(".spec"):
+            os.remove(files)
 
 
 file_selected = select_file()
-convert_py_to_exe(file_selected)
+for file in file_selected:
+    convert_py_to_exe(file)
