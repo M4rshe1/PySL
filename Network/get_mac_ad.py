@@ -1,5 +1,6 @@
 import nmap
 import re
+import pyperclip as pycp
 
 ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
 
@@ -18,5 +19,9 @@ def get_mac_address(ip_address):
 
 
 ipaddress = input("Enter ip address of the Host you want the MAC address: \n>>")
-print(get_mac_address(ipaddress))
-input("Press any key to exit")
+mac_address = get_mac_address(ipaddress)
+print(f"MAC Address of {ipaddress} is {mac_address}")
+# copy the mac address to clipboard
+pycp.copy(mac_address)
+input("MAC address copied to clipboard, press any key to exit")
+

@@ -8,7 +8,6 @@ import re
 
 
 def convert():
-    filename = ""
     wordslist = [{"word": "null", "count": 0}]
     txt_file = open_window("txt")
     with open(txt_file) as file_in:
