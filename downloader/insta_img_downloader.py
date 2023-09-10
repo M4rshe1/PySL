@@ -8,14 +8,17 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-# check if download folder exists
+# check if download/instagram folder exists
 # if not create one
-if not os.path.exists("downloads"):
-    os.makedirs("downloads")
+if not os.path.exists("downloads/instagram"):
+    os.makedirs("downloads/instagram")
+
+# get local user
+user = os.getlogin()
 
 
 def find_image_url(post_link):
-    chrome_profile_directory = "C:/Users/colin/AppData/Local/Google/Chrome/User Data/"
+    chrome_profile_directory = f"C:/Users/{user}/AppData/Local/Google/Chrome/User Data/"
 
     # Create ChromeOptions object and set the profile directory
     chrome_options = webdriver.ChromeOptions()
@@ -57,7 +60,7 @@ def find_image_url(post_link):
 
 def download_image(file_url, set_file_name):
     print("Downloading image...")
-    with open("downloads/" + set_file_name + ".jpg", "wb") as img_file:
+    with open("downloads/instagram" + set_file_name + ".jpg", "wb") as img_file:
         # downloading the image
         response = requests.get(file_url)
         # writing the contents of the image
@@ -92,5 +95,5 @@ if __name__ == "__main__":
                     if image_url is not None:
                         download_image(image_url, file_name)
                         print(f"Processed line {line_number} of {total_lines}")
-
+                print("Done!")
                 break
