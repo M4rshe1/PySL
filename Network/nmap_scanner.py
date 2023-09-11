@@ -3,6 +3,7 @@ import os
 import nmap
 import json
 import re
+from get_mac_ad import get_mac_address
 
 ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
 ip_range_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]{1,2}$")
@@ -32,7 +33,8 @@ def print_nmap_result(scanned_hosts, ip_address):
         print(f"MAC Address: {scanned_hosts['scan'][ip_address]['addresses']['mac']}")
     # print device vendor if it is found
     if len(scanned_hosts['scan'][ip_address]['vendor']) > 0:
-        print(f"Vendor: {scanned_hosts['scan'][ip_address]['vendor'][scanned_hosts['scan'][ip_address]['addresses']['mac']]}")
+        print(
+            f"Vendor: {scanned_hosts['scan'][ip_address]['vendor'][scanned_hosts['scan'][ip_address]['addresses']['mac']]}")
     print(f"OS: {scanned_hosts['scan'][ip_address]['osmatch'][0]['name']}")
     print(f"OS Accuracy: {scanned_hosts['scan'][ip_address]['osmatch'][0]['accuracy']}")
     print(f"OS Type: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['type']}")
@@ -144,12 +146,29 @@ def nmap_scan_discover():
         input(e)
 
 
+def run_custom_flags():
+    while True:
+        ip_add_entered = input("Enter IP address or range to scan: \n>> ")
+        if not ip_add_pattern.search(ip_add_entered):
+            print(f"{ip_add_entered} is valid, scanning...")
+            break
+    arguments_entered = input("Enter the flags you want to run: \n>> ")
+    try:
+        scanned_results = nm.scan(ip_add_entered, arguments=arguments_entered)
+        print("\nCommand Run: " + nm.command_line() + " \n")
+        open(f'scans/NMAP-CUSTOM_({ip_add_entered}).json', 'a').write(json.dumps(scanned_results, indent=4))
+    except Exception as e:
+        input(e)
+
+
 while True:
     print("\nPlease enter the type of scan you want to run.")
     print("IP Port Scanner             [1]")
     print("IP specific Port Scanner    [2]")
     print("Host Discovery              [3]")
-    print("Quit                        [4]")
+    print("Get MAC from IP             [4]")
+    print("Run NMAP with custom Flags  [5]")
+    print("Quit                        [6]")
     print("Please enter your choice below: ")
     scan_choice = input(">> ")
 
@@ -160,4 +179,13 @@ while True:
     elif scan_choice == "3":
         nmap_scan_discover()
     elif scan_choice == "4":
+        while True:
+            ip_addr = input("\nPlease enter the ip address that you want to get the MAC address from: \n>> ")
+            if ip_add_pattern.search(ip_addr):
+                print(f"{ip_addr} is valid, getting MAC address...")
+                break
+        get_mac_address(input("Please enter the IP address you want to get the MAC address from: \n>> "))
+    elif scan_choice == "5":
+        run_custom_flags()
+    elif scan_choice == "6":
         break
