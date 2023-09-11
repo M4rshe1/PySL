@@ -1,6 +1,7 @@
 from datetime import datetime
 import os
 import nmap
+import json
 import re
 
 ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
@@ -11,14 +12,15 @@ nm = nmap.PortScanner()
 
 # Print the nmap results
 def print_nmap_result(scanned_hosts, ip_address):
+    # print(scanned_hosts['scan'][ip_address])
     # Check if the folder scans exists
     if not os.path.exists('scans'):
         # If not create the folder
         os.mkdir('scans')
     date_time = datetime.now().strftime("%m.%d.%Y_%H-%M-%S")
-    
+
     filename = f'scans/NMAP-{date_time}_({ip_address}).txt'
-    
+
     # Write the command run to the file in the scans folder
     open(filename, 'a').write("Command Run: " + nm.command_line() + "\n\n\n")
     # Filename is the Date and Time of the scan
@@ -30,7 +32,7 @@ def print_nmap_result(scanned_hosts, ip_address):
         print(f"MAC Address: {scanned_hosts['scan'][ip_address]['addresses']['mac']}")
     # print device vendor if it is found
     if len(scanned_hosts['scan'][ip_address]['vendor']) > 0:
-        print(f"Vendor: {scanned_hosts['scan'][ip_address]['vendor']}")
+        print(f"Vendor: {scanned_hosts['scan'][ip_address]['vendor'][scanned_hosts['scan'][ip_address]['addresses']['mac']]}")
     print(f"OS: {scanned_hosts['scan'][ip_address]['osmatch'][0]['name']}")
     print(f"OS Accuracy: {scanned_hosts['scan'][ip_address]['osmatch'][0]['accuracy']}")
     print(f"OS Type: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['type']}")
@@ -51,8 +53,10 @@ def print_nmap_result(scanned_hosts, ip_address):
     open(filename, 'a').write(f"OS Accuracy: {scanned_hosts['scan'][ip_address]['osmatch'][0]['accuracy']}\n")
     open(filename, 'a').write(f"OS Type: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['type']}\n")
     open(filename, 'a').write(f"OS Vendor: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['vendor']}\n")
-    open(filename, 'a').write(f"OS Family: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osfamily']}\n")
-    open(filename, 'a').write(f"OS Generation: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osgen']}\n")
+    open(filename, 'a').write(
+        f"OS Family: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osfamily']}\n")
+    open(filename, 'a').write(
+        f"OS Generation: {scanned_hosts['scan'][ip_address]['osmatch'][0]['osclass'][0]['osgen']}\n")
     open(filename, 'a').write("-" * 100 + "\n")
     # Print port and version information using the scanned_ports_versions variable
     for port in scanned_hosts['scan'][ip_address]['tcp']:
@@ -68,8 +72,10 @@ def print_nmap_result(scanned_hosts, ip_address):
         # Append the port and version information to the file
         open(filename, 'a').write(f"Port: {port:<5}\tState: {port_state:<10}"
                                   f"Name: {port_name:<15}Product: {port_product:<30}Version: {port_version}\n")
-        # close the file
+    # close the file
     open(filename, 'a').close()
+    # convert the scnanned_hosts to json and write it to a file
+    open(f'scans/NMAP-{date_time}_({ip_address}).json', 'a').write(json.dumps(scanned_hosts, indent=4))
 
 
 # Scan a specific ip address for open ports and the version of the services that are running on those ports

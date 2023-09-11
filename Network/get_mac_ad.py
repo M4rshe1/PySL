@@ -6,7 +6,6 @@ ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
 
 
 def get_mac_address(ip_address):
-
     if not ip_add_pattern.search(ip_address):
         print(f"{ip_address} is not a valid ip address")
         return None
@@ -24,4 +23,3 @@ print(f"MAC Address of {ipaddress} is {mac_address}")
 # copy the mac address to clipboard
 pycp.copy(mac_address)
 input("MAC address copied to clipboard, press any key to exit")
-
