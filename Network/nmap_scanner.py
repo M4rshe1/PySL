@@ -183,8 +183,8 @@ while True:
             ip_addr = input("\nPlease enter the ip address that you want to get the MAC address from: \n>> ")
             if ip_add_pattern.search(ip_addr):
                 print(f"{ip_addr} is valid, getting MAC address...")
+                get_mac_address(input("Please enter the IP address you want to get the MAC address from: \n>> "))
                 break
-        get_mac_address(input("Please enter the IP address you want to get the MAC address from: \n>> "))
     elif scan_choice == "5":
         run_custom_flags()
     elif scan_choice == "6":

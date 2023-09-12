@@ -13,9 +13,6 @@ def select_file():
     file_path = filedialog.askopenfilenames(title="Select a file",
                                             filetypes=(("Python", "*.py"), ("All files", "*.*")))
 
-    # file_path = filedialog.askopenfilename(initialdir="/", title="Select a file",
-    #                                        filetypes=(("Python", "*.py"), ("All files", "*.*")))
-    # Break if a file is selected
     # kill the program if no file is selected
     if file_path == "":
         print("No file selected")

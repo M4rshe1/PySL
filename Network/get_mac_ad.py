@@ -17,9 +17,12 @@ def get_mac_address(ip_address):
             return nm[host]['addresses']['mac']
 
 
-ipaddress = input("Enter ip address of the Host you want the MAC address: \n>>")
-mac_address = get_mac_address(ipaddress)
-print(f"MAC Address of {ipaddress} is {mac_address}")
-# copy the mac address to clipboard
-pycp.copy(mac_address)
-input("MAC address copied to clipboard, press any key to exit")
+if __name__ == "__main__":
+    while True:
+        ipaddress = input("Enter ip address of the Host you want the MAC address: \n>>")
+        mac_address = get_mac_address(ipaddress)
+        print(f"MAC Address of {ipaddress} is {mac_address}")
+        # copy the mac address to clipboard
+        pycp.copy(mac_address)
+        input("MAC address copied to clipboard, press any key to exit")
+        break
