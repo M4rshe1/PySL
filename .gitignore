@@ -10,3 +10,5 @@ env
 /Network/scans/
 /coverter/build/
 /downloader/downloads/
+/coverter/dist/scans/
+/Network/config/
