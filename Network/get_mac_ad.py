@@ -14,7 +14,10 @@ def get_mac_address(ip_address):
     hosts_list = [(x, nm[x]['status']['state']) for x in nm.all_hosts()]
     for host, status in hosts_list:
         if status == "up":
-            return nm[host]['addresses']['mac']
+            if hasattr(nm[host], 'addresses') and 'mac' in nm[host]['addresses']:
+                return nm[host]['addresses']['mac']
+            else:
+                return "Not Found"
 
 
 if __name__ == "__main__":
@@ -22,7 +25,10 @@ if __name__ == "__main__":
         ipaddress = input("Enter ip address of the Host you want the MAC address: \n>>")
         mac_address = get_mac_address(ipaddress)
         print(f"MAC Address of {ipaddress} is {mac_address}")
-        # copy the mac address to clipboard
-        pycp.copy(mac_address)
-        input("MAC address copied to clipboard, press any key to exit")
+        # copy the mac address to
+        if mac_address != "Not Found":
+            pycp.copy(mac_address)
+            input("MAC address copied to clipboard, press any key to exit")
+        else:
+            input("MAC address not found, press any key to exit")
         break

@@ -5,6 +5,8 @@ import json
 import re
 from get_mac_ad import get_mac_address
 from time import perf_counter
+import pyperclip as pycp
+from get_vendor_from_mac import send_request as get_vendor
 
 
 ip_add_pattern = re.compile("^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
@@ -185,13 +187,18 @@ def run_custom_flags():
 
 
 while True:
+    os.system('cls')
     print("\nPlease enter the type of scan you want to run.")
+    print("--------- NMAP Scanner ---------")
     print("IP Port Scanner             [1]")
     print("IP specific Port Scanner    [2]")
     print("Host Discovery              [3]")
-    print("Get MAC from IP             [4]")
-    print("Run NMAP with custom Flags  [5]")
-    print("Quit                        [6]")
+    print("Run NMAP with custom Flags  [4]")
+    print("--------- MAC Scanner ----------")
+    print("Get MAC from IP             [5]")
+    print("Get Vendor from MAC         [6]")
+    print("------------- Quit -------------")
+    print("Quit                        [q]")
     print("Please enter your choice below: ")
     scan_choice = input(">> ")
 
@@ -201,14 +208,31 @@ while True:
         nmap_scan_specific_port()
     elif scan_choice == "3":
         nmap_scan_discover()
-    elif scan_choice == "4":
+    elif scan_choice == "5":
         while True:
-            ip_addr = input("\nPlease enter the ip address that you want to get the MAC address from: \n>> ")
+            ip_addr = input("Please enter the IP address you want to get the MAC address from: \n>> ")
             if ip_add_pattern.search(ip_addr):
                 print(f"{ip_addr} is valid, getting MAC address...")
-                get_mac_address(input("Please enter the IP address you want to get the MAC address from: \n>> "))
+                mac_addr = get_mac_address(ip_addr)
+                input(f"MAC Address of {ip_addr} is {mac_addr}")
+                # copy the mac address to clipboard
+                pycp.copy(mac_addr)
                 break
-    elif scan_choice == "5":
-        run_custom_flags()
+            else:
+                print(f"{ip_addr} is not a valid IP address, please retry.")
     elif scan_choice == "6":
+        while True:
+            mac_addr = input("Enter MAC address of the Host you want the vendor: \n>> ")
+            try:
+                vendor = get_vendor(mac_addr)
+            except Exception as e:
+                print(e)
+                continue
+            mac_vendor = mac_addr[:8] + ":XX:XX:XX"
+            print(F"All {mac_vendor} belong to {vendor}")
+            input(f"Vendor of {mac_addr} is {vendor}")
+            break
+    elif scan_choice == "4":
+        run_custom_flags()
+    elif scan_choice == "q":
         break

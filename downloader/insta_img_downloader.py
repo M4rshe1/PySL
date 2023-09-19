@@ -58,7 +58,7 @@ def find_image_url(post_link):
 
 def download_image(file_url, set_file_name):
     print("Downloading image...")
-    with open("downloads/instagram" + set_file_name + ".jpg", "wb") as img_file:
+    with open("downloads/instagram/" + set_file_name + ".jpg", "wb") as img_file:
         # downloading the image
         response = requests.get(file_url)
         # writing the contents of the image
