@@ -8,7 +8,7 @@ ext_typical = {
     'AUDIO': ['aac', 'aiff', 'ape', 'au', 'flac', 'gsm', 'it', 'm3u', 'm4a', 'mid', 'mod', 'mp3', 'mpa', 'pls', 'ra',
               's3m', 'sid', 'wav', 'wma', 'xm'],
     'CODE': ['c', 'cc', 'class', 'clj', 'cpp', 'cs', 'cxx', 'el', 'go', 'h', 'java', 'lua', 'm', 'm4', 'php', 'pl',
-             'po', 'py', 'rb', 'rs', 'swift', 'vb', 'vcxproj', 'xcodeproj', 'xml', 'diff', 'patch', 'html', 'js', "htm",
+             'po', 'py', 'rb', 'rs', 'swift', 'vb', 'vcxproj', 'xcodeproj', 'diff', 'patch', 'html', 'js', "htm",
              "ps1", "sql"],
     'SLIDE': ['ppt', 'odp'],
     'SHEET': ['ods', 'xls', 'xlsx', 'csv', 'ics', 'vcf'],
@@ -21,7 +21,7 @@ ext_typical = {
     'BOOK': ['mobi', 'epub', 'azw1', 'azw3', 'azw4', 'azw6', 'azw', 'cbr', 'cbz'],
     'TEXT': ['doc', 'docx', 'ebook', 'log', 'md', 'msg', 'odt', 'org', 'pages', 'pdf', 'rtf', 'rst', 'tex', 'txt',
              'wpd', 'wps'],
-    'EXEC': ['exe', 'msi', 'bin', 'command', 'sh', 'bat', 'crx'],
+    'EXEC': ['exe', 'msi', 'bin', 'command', 'sh', 'bat', 'crx', ],
     'FONT': ['eot', 'otf', 'ttf', 'woff', 'woff2', "pf2"],
     'VIDEO': ['3g2', '3gp', 'aaf', 'asf', 'avchd', 'avi', 'drc', 'flv', 'm2v', 'm4p', 'm4v', 'mkv', 'mng', 'mov',
               'mp2', 'mp4', 'mpe', 'mpeg', 'mpg', 'mpv', 'mxf', 'nsv', 'ogg', 'ogv', 'ogm', 'qt', 'rm', 'rmvb',
@@ -31,6 +31,8 @@ ext_typical = {
     'DATABASE': ['db', 'dbf', 'mdb', 'pdb'],
     'DATA': ['json', 'yaml', 'xml', 'yml'],
     'CONFIG': ['ini', 'cfg', 'conf', 'config', 'properties', 'prop', 'settings', 'inf' 'reg'],
+    'DIAGRAMS': ['drawio', 'dtmp', 'nsd', 'fprg'],
+    'BACKUP': ['bak'],
 }
 
 ext_personal = {
@@ -38,7 +40,7 @@ ext_personal = {
     'AUDIO': ['aac', 'aiff', 'ape', 'au', 'flac', 'gsm', 'it', 'm3u', 'm4a', 'mid', 'mod', 'mp3', 'mpa', 'pls', 'ra',
               's3m', 'sid', 'wav', 'wma', 'xm'],
     'CODE': ['c', 'cc', 'class', 'clj', 'cpp', 'cs', 'cxx', 'el', 'go', 'h', 'java', 'lua', 'm', 'm4', 'php', 'pl',
-             'po', 'py', 'rb', 'rs', 'swift', 'vb', 'vcxproj', 'xcodeproj', 'xml', 'diff', 'patch', 'ps1', 'sql'],
+             'po', 'py', 'rb', 'rs', 'swift', 'vb', 'vcxproj', 'xcodeproj', 'diff', 'patch', 'ps1', 'sql'],
     'SHEET': ['ods', 'csv', 'ics', 'vcf'],
     'IMAGE': ['3dm', '3ds', 'max', 'bmp', 'dds', 'gif', 'jpg', 'jpeg', 'png', 'psd', 'xcf', 'tga', 'thm', 'tif',
               'tiff', 'ai', 'eps', 'ps', 'svg', 'dwg', 'dxf', 'gpx', 'kml', 'kmz', 'webp', 'ico', 'jfif', 'jpe', 'stl',
@@ -49,7 +51,7 @@ ext_personal = {
     'BOOK': ['mobi', 'epub', 'azw1', 'azw3', 'azw4', 'azw6', 'azw', 'cbr', 'cbz'],
     'TEXT': ['ebook', 'log', 'md', 'msg', 'odt', 'org', 'pages', 'rtf', 'rst', 'tex', 'txt',
              'wpd', 'wps'],
-    'EXEC': ['exe', 'msi', 'bin', 'command', 'sh', 'bat', 'crx', 'com', 'appimage', 'run', 'apk', 'deb', 'rpm'],
+    'EXEC': ['exe', 'msi', 'bin', 'command', 'sh', 'bat', 'crx', 'com', 'appimage', 'run', 'apk', 'deb', 'rpm', 'jar'],
     'FONT': ['eot', 'otf', 'ttf', 'woff', 'woff2', "pf2"],
     'VIDEO': ['3g2', '3gp', 'aaf', 'asf', 'avchd', 'avi', 'drc', 'flv', 'm2v', 'm4p', 'm4v', 'mkv', 'mng', 'mov',
               'mp2', 'mp4', 'mpe', 'mpeg', 'mpg', 'mpv', 'mxf', 'nsv', 'ogg', 'ogv', 'ogm', 'qt', 'rm', 'rmvb',
@@ -118,6 +120,7 @@ def sort_files(ex, src_path, path):
                     print(f"FILE ({cat}): " + item)
                     check_path(path + "/" + cat)
                     move_files(item_path, path + "/" + cat.upper() + "/" + item)
+                else:
                     break
 
             print(f"FILE (OTHER): " + item)
