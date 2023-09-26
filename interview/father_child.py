@@ -7,7 +7,3 @@ if __name__ == "__main__":
         if father_age - before_time == times * (i - before_time):
             print(f"Father age is {father_age} and child age is {i}")
             break
-
-
-
-

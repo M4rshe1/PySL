@@ -22,7 +22,7 @@ def select_file():
 
 
 def convert_py_to_exe(file_path):
-    print(file_path)
+    # print(file_path)
     input("Icon for the exe?\nName the *.ico file like the python file and place it in the same folder as the python "
           "file.\n>> ")
 
@@ -32,10 +32,12 @@ def convert_py_to_exe(file_path):
     # print(icon_path)
     if os.path.exists(icon_path):
         subprocess.call(
-            f"pyinstaller --onefile --icon={icon_path} {file_path}")
+            f"pyinstaller --onefile --icon={icon_path} {file_path}"
+        )
     else:
         subprocess.call(
-            f"pyinstaller --onefile {file_path}")
+            f"pyinstaller --onefile {file_path}"
+        )
     print("Done")
     # delete all .spec files
     for files in os.listdir():

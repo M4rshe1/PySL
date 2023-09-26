@@ -26,7 +26,8 @@ def print_nmap_result(scanned_hosts, ip_address, time_took):
     date_time = datetime.now().strftime("%m.%d.%Y_%H-%M-%S")
 
     filename = f'scans/NMAP-{date_time}_({ip_address}).txt'
-
+    # convert the scnanned_hosts to json and write it to a file
+    open(f'scans/NMAP-{date_time}_({ip_address}).json', 'a').write(json.dumps(scanned_hosts, indent=4))
     # Write the command run to the file in the scans folder
     open(filename, 'a').write("Command Run: " + nm.command_line() + "\n")
     open(filename, 'a').write(f"in {time_took:.2f} seconds" + "\n\n\n")
@@ -39,8 +40,10 @@ def print_nmap_result(scanned_hosts, ip_address, time_took):
     # print mac address if it is found
     if len(scanned_hosts['scan'][ip_address]['hostnames']) > 0:
         print(f"Hostname: {scanned_hosts['scan'][ip_address]['hostnames'][0]['name']}")
-    if len(scanned_hosts['scan'][ip_address]['addresses']['mac']) > 0:
-        print(f"MAC Address: {scanned_hosts['scan'][ip_address]['addresses']['mac']}")
+        # check if mac address exists
+    mac_address = scanned_hosts['scan'][ip_address]['addresses']['mac']
+    if mac_address:
+        print(f"MAC Address: {mac_address}")
     # print device vendor if it is found
     if len(scanned_hosts['scan'][ip_address]['vendor']) > 0:
         print(
@@ -60,7 +63,7 @@ def print_nmap_result(scanned_hosts, ip_address, time_took):
     open(filename, 'a').write(f"Host: {ip_address}\tStatus: {scanned_hosts['scan'][ip_address]['status']['state']}\n")
     if len(scanned_hosts['scan'][ip_address]['hostnames']) > 0:
         open(filename, 'a').write(f"Hostname: {scanned_hosts['scan'][ip_address]['hostnames'][0]['name']}\n")
-    if len(scanned_hosts['scan'][ip_address]['addresses']['mac']) > 0:
+    if scanned_hosts['scan'][ip_address]['addresses']['mac']:
         open(filename, 'a').write(f"MAC Address: {scanned_hosts['scan'][ip_address]['addresses']['mac']}\n")
     if len(scanned_hosts['scan'][ip_address]['vendor']) > 0:
         open(filename, 'a').write(f"Vendor: {scanned_hosts['scan'][ip_address]['vendor'][scanned_hosts['scan'][ip_address]['addresses']['mac']]}\n")
@@ -89,8 +92,7 @@ def print_nmap_result(scanned_hosts, ip_address, time_took):
                                   f"Name: {port_name:<15}Product: {port_product:<30}Version: {port_version}\n")
     # close the file
     open(filename, 'a').close()
-    # convert the scnanned_hosts to json and write it to a file
-    open(f'scans/NMAP-{date_time}_({ip_address}).json', 'a').write(json.dumps(scanned_hosts, indent=4))
+
 
 
 # Scan a specific ip address for open ports and the version of the services that are running on those ports
@@ -189,15 +191,15 @@ def run_custom_flags():
 while True:
     os.system('cls')
     print("\nPlease enter the type of scan you want to run.")
-    print("--------- NMAP Scanner ---------")
+    print("--------- NMAP Scanner --------")
     print("IP Port Scanner             [1]")
     print("IP specific Port Scanner    [2]")
     print("Host Discovery              [3]")
     print("Run NMAP with custom Flags  [4]")
-    print("--------- MAC Scanner ----------")
+    print("--------- MAC Scanner ---------")
     print("Get MAC from IP             [5]")
     print("Get Vendor from MAC         [6]")
-    print("------------- Quit -------------")
+    print("------------ Quit -------------")
     print("Quit                        [q]")
     print("Please enter your choice below: ")
     scan_choice = input(">> ")

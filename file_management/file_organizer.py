@@ -61,6 +61,8 @@ ext_personal = {
     'DATABASE': ['db', 'dbf', 'mdb', 'pdb'],
     'DATA': ['json', 'yaml', 'xml', 'yml'],
     'CONFIG': ['ini', 'cfg', 'conf', 'config', 'properties', 'prop', 'settings', 'inf' 'reg'],
+    'DIAGRAMS': ['drawio', 'dtmp', 'nsd', 'fprg'],
+    'BACKUP': ['bak'],
 }
 
 # SETTINGS
@@ -92,7 +94,11 @@ def check_path(path):
 
 def move_files(src_path, path):
     global count
-    shutil.move(src_path, path)
+    try:
+        shutil.move(src_path, path)
+    except Exception as e:
+        print(f"ERROR with: {path}")
+        print(e)
     count += 1
 
 
@@ -106,18 +112,20 @@ def sort_files(ex, src_path, path):
         item_path = src_path + "/" + item
         if os.path.isfile(item_path):
             for cat, extension in ex.items():
+                # print("EXT: " + str(extension))
+                # print(item.split(".")[-1].lower())
                 if item.split(".")[-1].lower() in extension:
-                    print("FILE: " + item)
+                    print(f"FILE ({cat}): " + item)
                     check_path(path + "/" + cat)
                     move_files(item_path, path + "/" + cat.upper() + "/" + item)
                     break
-                else:
-                    print("FILE: " + item)
-                    check_path(path + "/OTHER")
-                    move_files(item_path, path + "/OTHER/" + item)
-                    break
+
+            print(f"FILE (OTHER): " + item)
+            check_path(path + "/OTHER")
+            move_files(item_path, path + "/OTHER/" + item)
+
         elif os.path.isdir(item_path):
-            print("FOLDER: " + item)
+            print(f"FOLDER: " + item)
             check_path(path + "/FOLDERS")
             move_files(item_path, path + "/FOLDERS/" + item)
 
