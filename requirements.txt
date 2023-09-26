@@ -1,5 +1,5 @@
 paramiko~=3.3.1
-pandas~=2.1.0
+pandas==2.1.1
 python-nmap~=0.7.1
 network~=0.1
 pyinstaller==5.13.2
@@ -13,3 +13,6 @@ pyperclip~=1.8.2
 wakeonlan~=3.0.0
 customtkinter~=5.2.0
 moviepy~=1.0.3
+curses-menu==0.7.1
+keyboard~=0.13.5
+

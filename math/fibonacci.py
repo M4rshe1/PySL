@@ -1,9 +1,13 @@
+# Fibonacci sequence with recursion
 # def fib(n):
-#     a, b = 0, 1
-#     while a < n:
-#         print(a, end=" ")
-#         a, b = b, b + a
-#     print()
+#     if n == 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         print(n)
+#         return fib(n - 1) + fib(n - 2)
+
 
 def fib(n):
     a, b = 0, 1

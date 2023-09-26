@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 import requests
 import os
+from time import perf_counter
 
 # check if download/instagram folder exists
 # if not create one
@@ -34,7 +35,7 @@ def find_image_url(post_link):
             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
             # time.sleep(2)  # Wait for content to load, adjust as needed
 
-        # Wait for a specific element to be present (you can change this condition)7
+        # Wait for a specific element to be present (you can change this condition)
         print("Waiting for image to load...")
         WebDriverWait(driver, 3).until(
             ec.presence_of_element_located((By.CSS_SELECTOR, 'img.x5yr21d.xu96u03.x10l6tqk.x13vifvy.x87ps6o.xh8yej3'))
@@ -80,13 +81,21 @@ def from_urls_file():
         file.seek(0)  # Reset file position to the beginning
 
         for line_number, line in enumerate(file, start=1):
+            start = perf_counter()
             url = line.strip()
             file_name = url.split("/")[-2]
             image_url = find_image_url(url)
 
             if image_url is not None:
                 download_image(image_url, file_name)
+                end = perf_counter()
+                # calculate time to download the rest of the images
+                time_to_download = (end - start) * (total_lines - line_number)
                 print(f"Processed line {line_number} of {total_lines}")
+                print(f"Rest Time: {time_to_download:.2f} seconds")
+            else:
+                print(f"Unable to download image from {url}")
+
         print("Done!")
 
 
