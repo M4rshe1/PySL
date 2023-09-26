@@ -22,6 +22,7 @@ def select_file():
 
 
 def convert_py_to_exe(file_path):
+    print(file_path)
     input("Icon for the exe?\nName the *.ico file like the python file and place it in the same folder as the python "
           "file.\n>> ")
 
