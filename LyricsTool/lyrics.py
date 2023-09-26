@@ -62,15 +62,15 @@ try:
     while True:
         callFunction = input("What would you like to do? (L)oad or (C)onvert: ")
         # print(callFunction)
-        if callFunction.lower().find("c") != -1:
+        if callFunction.lower() == "c":
             convert()
             sys.exit()
 
-        elif callFunction.lower().find("l") != -1:
+        elif callFunction.lower() == "l":
             load_csv()
             sys.exit()
 
-        elif callFunction.lower().find("quit") != -1:
+        elif callFunction.lower() == "q":
             sys.exit()
 except Exception as e:
     print(e)

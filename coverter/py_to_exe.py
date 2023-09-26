@@ -11,7 +11,7 @@ def select_file():
     root.withdraw()
     # multiple files can be selected
     file_path = filedialog.askopenfilenames(title="Select a file",
-                                            filetypes=(("Python", "*.py"), ("All files", "*.*")))
+                                            filetypes=(("Python", "*.py"), ("All files", "*.*")), initialdir=os.getcwd())
 
     # kill the program if no file is selected
     if file_path == "":
