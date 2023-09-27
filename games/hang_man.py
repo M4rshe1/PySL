@@ -1,7 +1,8 @@
 import random
 import string
 
-wordlist = "./wordlist.txt"
+wordlist_de = "./wordlist_de.txt"
+wordlist_en = "./wordlist_en.txt"
 
 
 def get_word():
@@ -50,6 +51,11 @@ if __name__ == "__main__":
     word_to_guess = get_word()
     wrong_guesses = 0
     guessed_letters = []
+    language = input("Choose language (de/en): \n>> ")
+    if language == "de":
+        wordlist = wordlist_de
+    elif language == "en":
+        wordlist = wordlist_en
     while True:
         print("\n" * 100)
         if print_man(wrong_guesses, word_to_guess):
@@ -63,7 +69,7 @@ if __name__ == "__main__":
         elif guess in word_to_guess:
             print("Correct!")
             guessed_letters.append(guess)
-            print_word(word_to_guess, guessed_letters)
+            word_guessed = print_word(word_to_guess, guessed_letters)
             if word_guessed == word_to_guess:
                 print("You win!")
                 break

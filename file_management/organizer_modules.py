@@ -2,7 +2,6 @@ import tkinter as tk
 import tkinter.filedialog as filedialog
 import os
 
-
 categories = ['WEB', 'AUDIO', 'CODE', 'SHEET', 'IMAGE', 'ARCHIVE', 'BOOK', 'TEXT', 'EXEC', 'FONT', 'VIDEO', 'PDF',
               'OFFICE', 'ISO', 'TORRENT', 'DATABASE', 'DATA', 'CONFIG', 'DIAGRAMS', 'BACKUP', 'FOLDER', 'OTHER']
 
@@ -70,12 +69,6 @@ ext_personal = {
     'BACKUP': ['bak'],
 }
 
-# SETTINGS
-SORTED_FOLDER = "SORTED"
-EXT_LIST_TYPE = ext_personal  # ext_typical or ext_personal
-EXCLUDE = ["desktop.ini", "Thumbs.db", "Thumbs.db:encryptable", "Thumbs.db:encryptable\$DATA",
-           SORTED_FOLDER]
-
 
 def select_folder():
     # print("Select a folder")
@@ -92,6 +85,12 @@ def select_folder():
         return path
 
 
+# SETTINGS
+SORTED_FOLDER = "SORTED"
+EXT_LIST_TYPE = ext_personal  # ext_typical or ext_personal
+EXCLUDE = ["desktop.ini", "Thumbs.db", "Thumbs.db:encryptable", "Thumbs.db:encryptable\$DATA",
+           SORTED_FOLDER]
+
 if __name__ == "__main__":
-    print("This is a module for file_organizer.py")
+    print("This is a module for file_management/main.py")
     exit()
