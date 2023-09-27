@@ -15,7 +15,7 @@ def get_word():
 def print_word(word, guesses):
     guessed_word = ""
     for letter in word:
-        if letter in guesses:
+        if letter.lower() in guesses or letter.upper() in guesses:
             guessed_word += letter
             print(letter + " ", end="")
         else:
@@ -48,14 +48,17 @@ def print_man(guesses, word):
 
 
 if __name__ == "__main__":
+    while True:
+        language = input("Choose language (de/en): \n>> ")
+        if language == "de":
+            wordlist = wordlist_de
+            break
+        elif language == "en":
+            wordlist = wordlist_en
+            break
     word_to_guess = get_word()
     wrong_guesses = 0
     guessed_letters = []
-    language = input("Choose language (de/en): \n>> ")
-    if language == "de":
-        wordlist = wordlist_de
-    elif language == "en":
-        wordlist = wordlist_en
     while True:
         print("\n" * 100)
         if print_man(wrong_guesses, word_to_guess):
@@ -66,7 +69,7 @@ if __name__ == "__main__":
         if guess in guessed_letters or guess not in string.ascii_lowercase or len(guess) != 1:
             print("NOT VALID or ALREADY GUESSED")
             continue
-        elif guess in word_to_guess:
+        elif guess in word_to_guess.lower():
             print("Correct!")
             guessed_letters.append(guess)
             word_guessed = print_word(word_to_guess, guessed_letters)
@@ -77,3 +80,4 @@ if __name__ == "__main__":
             print("Incorrect!")
             wrong_guesses += 1
             guessed_letters.append(guess)
+        guessed_letters.sort()

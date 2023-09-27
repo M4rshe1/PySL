@@ -2,23 +2,28 @@ import tkinter as tk
 from tkinter import messagebox
 import subprocess
 
+
 def open_client_page():
     main_frame.pack_forget()  # Hide the main page
     client_frame.pack()  # Show the client page
 
+
 def open_main_page():
     client_frame.pack_forget()  # Hide the client page
     main_frame.pack()  # Show the main page
+
 
 def clear_placeholder(event):
     if event.widget.get() == event.widget.placeholder:
         event.widget.delete(0, tk.END)
         event.widget.config(fg='black')
 
+
 def restore_placeholder(event):
     if not event.widget.get():
         event.widget.insert(0, event.widget.placeholder)
         event.widget.config(fg='grey')
+
 
 def toggle_password_visibility():
     if entry_password.cget('show') == '*':
@@ -27,6 +32,7 @@ def toggle_password_visibility():
     else:
         entry_password.config(show='*')
         show_password_button.config(text='Show Password')
+
 
 def start_rdp(ip, username, password):
     try:
@@ -47,8 +53,10 @@ def on_server_click():
     password = "Mine2007_?"
     start_rdp(ip, username, password)
 
+
 def on_client_click():
     open_client_page()
+
 
 def on_connect_click():
     ip = "192.168.1.225"
@@ -56,8 +64,10 @@ def on_connect_click():
     password = entry_password.get()
     start_rdp(ip, username, password)
 
+
 def on_connect_enter(event):
     on_connect_click()
+
 
 app = tk.Tk()
 app.title("RDP Session")
