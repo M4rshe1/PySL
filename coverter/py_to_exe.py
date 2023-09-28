@@ -48,3 +48,4 @@ def convert_py_to_exe(file_path):
 file_selected = select_file()
 for file in file_selected:
     convert_py_to_exe(file)
+    os.startfile(r"dist")

@@ -1,0 +1,5490 @@
+{
+    "stats": {
+        "total": 417,
+        "status": {
+            "completed": 162,
+            "watching": 7,
+            "plan to watch": 263,
+            "dropped": 21,
+            "on-hold": 8
+        },
+        "status_mal": {
+            "Completed": 278,
+            "Watching": 7,
+            "Plan to watch": 263,
+            "Dropped": 21,
+            "On-hold": 8
+        },
+        "ep": {
+            "total": 8729,
+            "completed": 4583,
+            "watching": 112,
+            "plan to watch": 3395,
+            "dropped": 271,
+            "on-hold": 368
+        },
+        "epw": {
+            "total": 5195,
+            "completed": 4583,
+            "watching": 76,
+            "plan to watch": 34,
+            "dropped": 69,
+            "on-hold": 433
+        }
+    },
+    "faults": {
+        "not_completely_watched": []
+    },
+    "animes": {
+        "\"Oshi no Ko\"": [
+            {
+                "name": "\"Oshi no Ko\"",
+                "status": "Plan to Watch",
+                "ep": "11",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "100-man no Inochi no Ue ni Ore wa Tatteiru": [
+            {
+                "name": "100-man no Inochi no Ue ni Ore wa Tatteiru",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "5-toubun no Hanayome": [
+            {
+                "name": "5-toubun no Hanayome",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "5-toubun no Hanayome \u222c",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "5-toubun no Hanayome Movie",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 3,
+                "type": "Movie"
+            },
+            {
+                "name": "5-toubun no Hanayome\u223d",
+                "status": "Completed",
+                "ep": "2",
+                "epw": "2",
+                "season": 4,
+                "type": "Special"
+            }
+        ],
+        "7 Seeds": [
+            {
+                "name": "7 Seeds",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "86": [
+            {
+                "name": "86",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "86 Part 2",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "86 Part 2 Recaps",
+                "status": "Completed",
+                "ep": "2",
+                "epw": "2",
+                "season": 3,
+                "type": "Special"
+            },
+            {
+                "name": "86 Special Edition: Senya ni Akaku Hinageshi no Saku",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 4,
+                "type": "Special"
+            }
+        ],
+        "91 Days": [
+            {
+                "name": "91 Days",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "91 Days: Toki no Asase/Subete no Kinou/Ashita, Mata Ashita",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 2,
+                "type": "Special"
+            }
+        ],
+        "A.I.C.O. Incarnation": [
+            {
+                "name": "A.I.C.O. Incarnation",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Aharen-san wa Hakarenai": [
+            {
+                "name": "Aharen-san wa Hakarenai",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "3",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ai no Utagoe wo Kikasete": [
+            {
+                "name": "Ai no Utagoe wo Kikasete",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Akagami no Shirayuki-hime": [
+            {
+                "name": "Akagami no Shirayuki-hime",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Akagami no Shirayuki-hime 2nd Season",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Akame ga Kill!": [
+            {
+                "name": "Akame ga Kill!",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Akatsuki no Yona": [
+            {
+                "name": "Akatsuki no Yona",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Akatsuki no Yona OVA",
+                "status": "Completed",
+                "ep": "3",
+                "epw": "3",
+                "season": 2,
+                "type": "OVA"
+            }
+        ],
+        "Akebi-chan no Sailor-fuku": [
+            {
+                "name": "Akebi-chan no Sailor-fuku",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Akira": [
+            {
+                "name": "Akira",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Akuyaku Reijou nanode Last Boss wo Kattemimashita": [
+            {
+                "name": "Akuyaku Reijou nanode Last Boss wo Kattemimashita",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.": [
+            {
+                "name": "Ano Hi Mita Hana no Namae wo Bokutachi wa Mada Shiranai.",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ansatsu Kyoushitsu": [
+            {
+                "name": "Ansatsu Kyoushitsu",
+                "status": "Completed",
+                "ep": "22",
+                "epw": "22",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Ansatsu Kyoushitsu 2nd Season",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Ansatsu Kyoushitsu: 365-nichi no Jikan",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 3,
+                "type": "Movie"
+            }
+        ],
+        "Ao Haru Ride": [
+            {
+                "name": "Ao Haru Ride",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ao no Exorcist": [
+            {
+                "name": "Ao no Exorcist",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Arifureta Shokugyou de Sekai Saikyou": [
+            {
+                "name": "Arifureta Shokugyou de Sekai Saikyou",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Arifureta Shokugyou de Sekai Saikyou 2nd Season",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Assassins Pride": [
+            {
+                "name": "Assassins Pride",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "2",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ayaka": [
+            {
+                "name": "Ayaka",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "B: The Beginning": [
+            {
+                "name": "B: The Beginning",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "ONA"
+            },
+            {
+                "name": "B: The Beginning Succession",
+                "status": "Completed",
+                "ep": "6",
+                "epw": "6",
+                "season": 2,
+                "type": "ONA"
+            }
+        ],
+        "Bai Yao Pu": [
+            {
+                "name": "Bai Yao Pu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Bakemonogatari": [
+            {
+                "name": "Bakemonogatari",
+                "status": "Plan to Watch",
+                "ep": "15",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Baki": [
+            {
+                "name": "Baki",
+                "status": "Plan to Watch",
+                "ep": "26",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Banana Fish": [
+            {
+                "name": "Banana Fish",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Barakamon": [
+            {
+                "name": "Barakamon",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ben-To": [
+            {
+                "name": "Ben-To",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Black Bullet": [
+            {
+                "name": "Black Bullet",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Black Clover": [
+            {
+                "name": "Black Clover",
+                "status": "Completed",
+                "ep": "170",
+                "epw": "170",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Black Clover: Mahou Tei no Ken",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 2,
+                "type": "Movie"
+            }
+        ],
+        "Black Lagoon": [
+            {
+                "name": "Black Lagoon",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Black Lagoon: Roberta's Blood Trail",
+                "status": "Plan to Watch",
+                "ep": "5",
+                "epw": "0",
+                "season": 2,
+                "type": "OVA"
+            }
+        ],
+        "Bleach": [
+            {
+                "name": "Bleach",
+                "status": "Completed",
+                "ep": "366",
+                "epw": "366",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Bleach: Memories in the Rain",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Special"
+            },
+            {
+                "name": "Bleach: Sennen Kessen-hen",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
+                "status": "Watching",
+                "ep": "13",
+                "epw": "11",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "Bleach: The Sealed Sword Frenzy",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 5,
+                "type": "Special"
+            }
+        ],
+        "Blue Lock": [
+            {
+                "name": "Blue Lock",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Blue Period": [
+            {
+                "name": "Blue Period",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Boku dake ga Inai Machi": [
+            {
+                "name": "Boku dake ga Inai Machi",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Boku ga Aishita Subete no Kimi e": [
+            {
+                "name": "Boku ga Aishita Subete no Kimi e",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Boku no Kokoro no Yabai Yatsu": [
+            {
+                "name": "Boku no Kokoro no Yabai Yatsu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Bokutachi no Remake": [
+            {
+                "name": "Bokutachi no Remake",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Bokutachi wa Benkyou ga Dekinai": [
+            {
+                "name": "Bokutachi wa Benkyou ga Dekinai",
+                "status": "Dropped",
+                "ep": "13",
+                "epw": "5",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Boruto: Naruto Next Generations": [
+            {
+                "name": "Boruto: Naruto Next Generations",
+                "status": "On-Hold",
+                "ep": "293",
+                "epw": "240",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Btooom!": [
+            {
+                "name": "Btooom!",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Bubble": [
+            {
+                "name": "Bubble",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Buddy Daddies": [
+            {
+                "name": "Buddy Daddies",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Bungou Stray Dogs": [
+            {
+                "name": "Bungou Stray Dogs",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Byousoku 5 Centimeter": [
+            {
+                "name": "Byousoku 5 Centimeter",
+                "status": "Plan to Watch",
+                "ep": "3",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Cardfight!! Vanguard: Link Joker-hen": [
+            {
+                "name": "Cardfight!! Vanguard: Link Joker-hen",
+                "status": "Plan to Watch",
+                "ep": "59",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Cardfight!! Vanguard: overDress": [
+            {
+                "name": "Cardfight!! Vanguard: overDress",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Chainsaw Man": [
+            {
+                "name": "Chainsaw Man",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Charlotte": [
+            {
+                "name": "Charlotte",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Charlotte: Tsuyoimono-tachi",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Special"
+            }
+        ],
+        "Chiyu Mahou no Machigatta Tsukaikata: Senjou wo Kakeru Kaifuku Youin": [
+            {
+                "name": "Chiyu Mahou no Machigatta Tsukaikata: Senjou wo Kakeru Kaifuku Youin",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu!": [
+            {
+                "name": "Choujin Koukousei-tachi wa Isekai demo Yoyuu de Ikinuku you desu!",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Citrus": [
+            {
+                "name": "Citrus",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Code Geass: Hangyaku no Lelouch": [
+            {
+                "name": "Code Geass: Hangyaku no Lelouch",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Code Geass: Hangyaku no Lelouch R2",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Collar x Malice Movie: Deep Cover": [
+            {
+                "name": "Collar x Malice Movie: Deep Cover",
+                "status": "Plan to Watch",
+                "ep": "2",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "COLORs": [
+            {
+                "name": "COLORs",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Cool Doji Danshi": [
+            {
+                "name": "Cool Doji Danshi",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Cowboy Bebop": [
+            {
+                "name": "Cowboy Bebop",
+                "status": "Completed",
+                "ep": "26",
+                "epw": "26",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Cyberpunk: Edgerunners": [
+            {
+                "name": "Cyberpunk: Edgerunners",
+                "status": "Completed",
+                "ep": "10",
+                "epw": "10",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Da Wang Rao Ming": [
+            {
+                "name": "Da Wang Rao Ming",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Dark Gathering": [
+            {
+                "name": "Dark Gathering",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Darling in the FranXX": [
+            {
+                "name": "Darling in the FranXX",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Darwin's Game": [
+            {
+                "name": "Darwin's Game",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Date A Live": [
+            {
+                "name": "Date A Live",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Dead Mount Death Play": [
+            {
+                "name": "Dead Mount Death Play",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Death March kara Hajimaru Isekai Kyousoukyoku": [
+            {
+                "name": "Death March kara Hajimaru Isekai Kyousoukyoku",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "5",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Death Note": [
+            {
+                "name": "Death Note",
+                "status": "Completed",
+                "ep": "37",
+                "epw": "37",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Death Note: Rewrite",
+                "status": "Completed",
+                "ep": "2",
+                "epw": "2",
+                "season": 2,
+                "type": "Special"
+            }
+        ],
+        "Death Parade": [
+            {
+                "name": "Death Parade",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Devils Line": [
+            {
+                "name": "Devils Line",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Domestic na Kanojo": [
+            {
+                "name": "Domestic na Kanojo",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Dororo": [
+            {
+                "name": "Dororo",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Dosanko Gal wa Namara Menkoi": [
+            {
+                "name": "Dosanko Gal wa Namara Menkoi",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Dr. Stone": [
+            {
+                "name": "Dr. Stone",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Dr. Stone: New World",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Dr. Stone: New World Part 2",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Dr. Stone: Stone Wars",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 4,
+                "type": "TV"
+            }
+        ],
+        "Dungeon Meshi": [
+            {
+                "name": "Dungeon Meshi",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka": [
+            {
+                "name": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Durarara!!": [
+            {
+                "name": "Durarara!!",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Eden (ONA)": [
+            {
+                "name": "Eden (ONA)",
+                "status": "Plan to Watch",
+                "ep": "4",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Edens Zero": [
+            {
+                "name": "Edens Zero",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Eiyuu Kyoushitsu": [
+            {
+                "name": "Eiyuu Kyoushitsu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Eiyuuou, Bu wo Kiwameru Tame Tenseisu: Soshite, Sekai Saikyou no Minarai Kishi\u2640": [
+            {
+                "name": "Eiyuuou, Bu wo Kiwameru Tame Tenseisu: Soshite, Sekai Saikyou no Minarai Kishi\u2640",
+                "status": "On-Hold",
+                "ep": "12",
+                "epw": "4",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Elfen Lied": [
+            {
+                "name": "Elfen Lied",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Enen no Shouboutai": [
+            {
+                "name": "Enen no Shouboutai",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Enen no Shouboutai: Ni no Shou",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Engage Kiss": [
+            {
+                "name": "Engage Kiss",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Eromanga-sensei": [
+            {
+                "name": "Eromanga-sensei",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Fairy Tail": [
+            {
+                "name": "Fairy Tail",
+                "status": "Plan to Watch",
+                "ep": "175",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Fate/stay night: Unlimited Blade Works": [
+            {
+                "name": "Fate/stay night: Unlimited Blade Works",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Fate/stay night: Unlimited Blade Works 2nd Season",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Fruits Basket 1st Season": [
+            {
+                "name": "Fruits Basket 1st Season",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Fullmetal Alchemist: Brotherhood": [
+            {
+                "name": "Fullmetal Alchemist: Brotherhood",
+                "status": "Completed",
+                "ep": "64",
+                "epw": "64",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Fumetsu no Anata e": [
+            {
+                "name": "Fumetsu no Anata e",
+                "status": "Completed",
+                "ep": "20",
+                "epw": "20",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Fumetsu no Anata e Season 2",
+                "status": "Completed",
+                "ep": "20",
+                "epw": "20",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Fumetsu no Anata e Season 3",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Fuufu Ijou, Koibito Miman.": [
+            {
+                "name": "Fuufu Ijou, Koibito Miman.",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Fuuka": [
+            {
+                "name": "Fuuka",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu": [
+            {
+                "name": "Gaikotsu Kishi-sama, Tadaima Isekai e Odekakechuu",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Genjitsu Shugi Yuusha no Oukoku Saikenki": [
+            {
+                "name": "Genjitsu Shugi Yuusha no Oukoku Saikenki",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Gintama'": [
+            {
+                "name": "Gintama'",
+                "status": "Plan to Watch",
+                "ep": "51",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Gintama\u00b0": [
+            {
+                "name": "Gintama\u00b0",
+                "status": "Plan to Watch",
+                "ep": "51",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Given": [
+            {
+                "name": "Given",
+                "status": "Plan to Watch",
+                "ep": "11",
+                "epw": "1",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Goblin Slayer": [
+            {
+                "name": "Goblin Slayer",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "God Eater": [
+            {
+                "name": "God Eater",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Gokushufudou": [
+            {
+                "name": "Gokushufudou",
+                "status": "Completed",
+                "ep": "5",
+                "epw": "5",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Golden Kamuy": [
+            {
+                "name": "Golden Kamuy",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Golden Time": [
+            {
+                "name": "Golden Time",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Grand Blue": [
+            {
+                "name": "Grand Blue",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Great Pretender": [
+            {
+                "name": "Great Pretender",
+                "status": "Plan to Watch",
+                "ep": "23",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Guilty Crown": [
+            {
+                "name": "Guilty Crown",
+                "status": "Plan to Watch",
+                "ep": "22",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Gunjou no Magmell": [
+            {
+                "name": "Gunjou no Magmell",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hachi-nan tte, Sore wa Nai deshou!": [
+            {
+                "name": "Hachi-nan tte, Sore wa Nai deshou!",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hai to Gensou no Grimgar: Furoagari no Kabe ni Kaketa Seishun - One More Centimeter": [
+            {
+                "name": "Hai to Gensou no Grimgar: Furoagari no Kabe ni Kaketa Seishun - One More Centimeter",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Special"
+            }
+        ],
+        "Haikyuu!!": [
+            {
+                "name": "Haikyuu!!",
+                "status": "Watching",
+                "ep": "25",
+                "epw": "16",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hajimete no Gal": [
+            {
+                "name": "Hajimete no Gal",
+                "status": "Dropped",
+                "ep": "10",
+                "epw": "2",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hakata Tonkotsu Ramens": [
+            {
+                "name": "Hakata Tonkotsu Ramens",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hametsu no Oukoku": [
+            {
+                "name": "Hametsu no Oukoku",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hataraku Maou-sama!": [
+            {
+                "name": "Hataraku Maou-sama!",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Hataraku Maou-sama!!",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "4",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Hataraku Maou-sama!! 2nd Season",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Hello World": [
+            {
+                "name": "Hello World",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Hellsing": [
+            {
+                "name": "Hellsing",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Hellsing Ultimate",
+                "status": "Plan to Watch",
+                "ep": "10",
+                "epw": "0",
+                "season": 2,
+                "type": "OVA"
+            }
+        ],
+        "Hige wo Soru. Soshite Joshikousei wo Hirou.": [
+            {
+                "name": "Hige wo Soru. Soshite Joshikousei wo Hirou.",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.": [
+            {
+                "name": "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "High School DxD": [
+            {
+                "name": "High School DxD",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "High School DxD BorN",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "High School DxD BorN: Ishibumi Ichiei Kanzen Kanshuu! Mousou Bakuyou Kaijo Original Video",
+                "status": "Completed",
+                "ep": "6",
+                "epw": "6",
+                "season": 3,
+                "type": "Special"
+            },
+            {
+                "name": "High School DxD Hero",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "High School DxD New",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 5,
+                "type": "TV"
+            }
+        ],
+        "Highschool of the Dead": [
+            {
+                "name": "Highschool of the Dead",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hikari no Ou": [
+            {
+                "name": "Hikari no Ou",
+                "status": "Plan to Watch",
+                "ep": "10",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen": [
+            {
+                "name": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen",
+                "status": "Plan to Watch",
+                "ep": "14",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 2nd Season",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Honzuki no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen 3rd Season",
+                "status": "Plan to Watch",
+                "ep": "10",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Horimiya": [
+            {
+                "name": "Horimiya",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Horimiya: Piece",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Hotarubi no Mori e": [
+            {
+                "name": "Hotarubi no Mori e",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Howl no Ugoku Shiro": [
+            {
+                "name": "Howl no Ugoku Shiro",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Hunter x Hunter (2011)": [
+            {
+                "name": "Hunter x Hunter (2011)",
+                "status": "Completed",
+                "ep": "148",
+                "epw": "148",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hyakka Ryouran: Samurai Girls": [
+            {
+                "name": "Hyakka Ryouran: Samurai Girls",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Hybrid Child": [
+            {
+                "name": "Hybrid Child",
+                "status": "Plan to Watch",
+                "ep": "4",
+                "epw": "0",
+                "season": 1,
+                "type": "OVA"
+            }
+        ],
+        "Hyouka": [
+            {
+                "name": "Hyouka",
+                "status": "Completed",
+                "ep": "22",
+                "epw": "22",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ijiranaide, Nagatoro-san": [
+            {
+                "name": "Ijiranaide, Nagatoro-san",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "5",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Infinite Dendrogram": [
+            {
+                "name": "Infinite Dendrogram",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Irozuku Sekai no Ashita kara": [
+            {
+                "name": "Irozuku Sekai no Ashita kara",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Isekai Cheat Magician": [
+            {
+                "name": "Isekai Cheat Magician",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta": [
+            {
+                "name": "Isekai de Cheat Skill wo Te ni Shita Ore wa, Genjitsu Sekai wo mo Musou Suru: Level Up wa Jinsei wo Kaeta",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Isekai Maou to Shoukan Shoujo no Dorei Majutsu": [
+            {
+                "name": "Isekai Maou to Shoukan Shoujo no Dorei Majutsu",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Isekai Maou to Shoukan Shoujo no Dorei Majutsu \u03a9",
+                "status": "Completed",
+                "ep": "10",
+                "epw": "10",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Isekai Nonbiri Nouka": [
+            {
+                "name": "Isekai Nonbiri Nouka",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Isekai Ojisan": [
+            {
+                "name": "Isekai Ojisan",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Isekai Shoukan wa Nidome desu": [
+            {
+                "name": "Isekai Shoukan wa Nidome desu",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Isekai wa Smartphone to Tomo ni.": [
+            {
+                "name": "Isekai wa Smartphone to Tomo ni.",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Isekai wa Smartphone to Tomo ni. 2",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "1",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Isekai Yakkyoku": [
+            {
+                "name": "Isekai Yakkyoku",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Itsudatte Bokura no Koi wa 10 cm Datta.": [
+            {
+                "name": "Itsudatte Bokura no Koi wa 10 cm Datta.",
+                "status": "Plan to Watch",
+                "ep": "6",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Jaku-Chara Tomozaki-kun": [
+            {
+                "name": "Jaku-Chara Tomozaki-kun",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Jibaku Shounen Hanako-kun": [
+            {
+                "name": "Jibaku Shounen Hanako-kun",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Jigokuraku": [
+            {
+                "name": "Jigokuraku",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Jitsu wa Ore, Saikyou deshita?": [
+            {
+                "name": "Jitsu wa Ore, Saikyou deshita?",
+                "status": "Watching",
+                "ep": "12",
+                "epw": "11",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Josee to Tora to Sakana-tachi": [
+            {
+                "name": "Josee to Tora to Sakana-tachi",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Jujutsu Kaisen": [
+            {
+                "name": "Jujutsu Kaisen",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Jujutsu Kaisen 0 Movie",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            },
+            {
+                "name": "Jujutsu Kaisen 2nd Season",
+                "status": "Watching",
+                "ep": "23",
+                "epw": "9",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Jujutsu Kaisen 2nd Season Recaps",
+                "status": "Completed",
+                "ep": "2",
+                "epw": "2",
+                "season": 4,
+                "type": "Special"
+            }
+        ],
+        "Kage no Jitsuryokusha ni Naritakute!": [
+            {
+                "name": "Kage no Jitsuryokusha ni Naritakute!",
+                "status": "Plan to Watch",
+                "ep": "20",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen": [
+            {
+                "name": "Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaguya-sama wa Kokurasetai: Ultra Romantic": [
+            {
+                "name": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen": [
+            {
+                "name": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen OVA",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "OVA"
+            }
+        ],
+        "Kaichou wa Maid-sama!": [
+            {
+                "name": "Kaichou wa Maid-sama!",
+                "status": "Completed",
+                "ep": "26",
+                "epw": "26",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaifuku Jutsushi no Yarinaoshi": [
+            {
+                "name": "Kaifuku Jutsushi no Yarinaoshi",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaijuu 8-gou": [
+            {
+                "name": "Kaijuu 8-gou",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life": [
+            {
+                "name": "Kaiko sareta Ankoku Heishi (30-dai) no Slow na Second Life",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaizoku Oujo": [
+            {
+                "name": "Kaizoku Oujo",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kakkou no Iinazuke": [
+            {
+                "name": "Kakkou no Iinazuke",
+                "status": "Dropped",
+                "ep": "24",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kakuriyo no Yadomeshi": [
+            {
+                "name": "Kakuriyo no Yadomeshi",
+                "status": "Plan to Watch",
+                "ep": "26",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kami Kuzu\u2606Idol": [
+            {
+                "name": "Kami Kuzu\u2606Idol",
+                "status": "Plan to Watch",
+                "ep": "10",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kami no Tou": [
+            {
+                "name": "Kami no Tou",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kami-tachi ni Hirowareta Otoko": [
+            {
+                "name": "Kami-tachi ni Hirowareta Otoko",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaminaki Sekai no Kamisama Katsudou": [
+            {
+                "name": "Kaminaki Sekai no Kamisama Katsudou",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kamonohashi Ron no Kindan Suiri": [
+            {
+                "name": "Kamonohashi Ron no Kindan Suiri",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kanojo ga Koushaku-tei ni Itta Riyuu": [
+            {
+                "name": "Kanojo ga Koushaku-tei ni Itta Riyuu",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "2",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kanojo mo Kanojo": [
+            {
+                "name": "Kanojo mo Kanojo",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kanojo, Okarishimasu": [
+            {
+                "name": "Kanojo, Okarishimasu",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Kanojo, Okarishimasu 2nd Season",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Kanojo, Okarishimasu 3rd Season",
+                "status": "Watching",
+                "ep": "12",
+                "epw": "11",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Kawaii dake ja Nai Shikimori-san": [
+            {
+                "name": "Kawaii dake ja Nai Shikimori-san",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaze ga Tsuyoku Fuiteiru": [
+            {
+                "name": "Kaze ga Tsuyoku Fuiteiru",
+                "status": "Plan to Watch",
+                "ep": "23",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kaze no Stigma": [
+            {
+                "name": "Kaze no Stigma",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.": [
+            {
+                "name": "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi.",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kemono Jihen": [
+            {
+                "name": "Kemono Jihen",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kenja no Mago": [
+            {
+                "name": "Kenja no Mago",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kikansha no Mahou wa Tokubetsu desu": [
+            {
+                "name": "Kikansha no Mahou wa Tokubetsu desu",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kimetsu no Yaiba": [
+            {
+                "name": "Kimetsu no Yaiba",
+                "status": "Completed",
+                "ep": "26",
+                "epw": "26",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Kimetsu no Yaiba Movie: Mugen Ressha-hen",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            },
+            {
+                "name": "Kimetsu no Yaiba: Hashira Geiko-hen",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Kimetsu no Yaiba: Jougen Shuuketsu, Soshite Katanakaji no Sato e",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 4,
+                "type": "Movie"
+            },
+            {
+                "name": "Kimetsu no Yaiba: Katanakaji no Sato-hen",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 5,
+                "type": "TV"
+            },
+            {
+                "name": "Kimetsu no Yaiba: Mugen Ressha-hen",
+                "status": "Completed",
+                "ep": "7",
+                "epw": "7",
+                "season": 6,
+                "type": "TV"
+            },
+            {
+                "name": "Kimetsu no Yaiba: Yuukaku-hen",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 7,
+                "type": "TV"
+            }
+        ],
+        "Kimi ni Todoke": [
+            {
+                "name": "Kimi ni Todoke",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kimi no Iru Machi": [
+            {
+                "name": "Kimi no Iru Machi",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo": [
+            {
+                "name": "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kimi no Na wa.": [
+            {
+                "name": "Kimi no Na wa.",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Kimi no Suizou wo Tabetai": [
+            {
+                "name": "Kimi no Suizou wo Tabetai",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen": [
+            {
+                "name": "Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen",
+                "status": "On-Hold",
+                "ep": "12",
+                "epw": "4",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kimi to, Nami ni Noretara": [
+            {
+                "name": "Kimi to, Nami ni Noretara",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Kimi wa Houkago Insomnia": [
+            {
+                "name": "Kimi wa Houkago Insomnia",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kimi wa Kanata": [
+            {
+                "name": "Kimi wa Kanata",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Kimi wo Aishita Hitori no Boku e": [
+            {
+                "name": "Kimi wo Aishita Hitori no Boku e",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Kino no Tabi: The Beautiful World - The Animated Series": [
+            {
+                "name": "Kino no Tabi: The Beautiful World - The Animated Series",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kinsou no Vermeil: Gakeppuchi Majutsushi wa Saikyou no Yakusai to Mahou Sekai wo Tsukisusumu": [
+            {
+                "name": "Kinsou no Vermeil: Gakeppuchi Majutsushi wa Saikyou no Yakusai to Mahou Sekai wo Tsukisusumu",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "4",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kiseijuu: Sei no Kakuritsu": [
+            {
+                "name": "Kiseijuu: Sei no Kakuritsu",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kitsutsuki Tanteidokoro": [
+            {
+                "name": "Kitsutsuki Tanteidokoro",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kizumonogatari I: Tekketsu-hen": [
+            {
+                "name": "Kizumonogatari I: Tekketsu-hen",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Knight's & Magic": [
+            {
+                "name": "Knight's & Magic",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Koe no Katachi": [
+            {
+                "name": "Koe no Katachi",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Koi to Uso": [
+            {
+                "name": "Koi to Uso",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Koi wa Ameagari no You ni": [
+            {
+                "name": "Koi wa Ameagari no You ni",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Koi wa Sekai Seifuku no Ato de": [
+            {
+                "name": "Koi wa Sekai Seifuku no Ato de",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kokoro Connect": [
+            {
+                "name": "Kokoro Connect",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Komi-san wa, Comyushou desu.": [
+            {
+                "name": "Komi-san wa, Comyushou desu.",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Komi-san wa, Comyushou desu. 2nd Season",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Kono Oto Tomare!": [
+            {
+                "name": "Kono Oto Tomare!",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kono Subarashii Sekai ni Shukufuku wo!": [
+            {
+                "name": "Kono Subarashii Sekai ni Shukufuku wo!",
+                "status": "Dropped",
+                "ep": "10",
+                "epw": "4",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Konyaku Haki sareta Reijou wo Hirotta Ore ga, Ikenai Koto wo Oshiekomu": [
+            {
+                "name": "Konyaku Haki sareta Reijou wo Hirotta Ore ga, Ikenai Koto wo Oshiekomu",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Koori Zokusei Danshi to Cool na Douryou Joshi": [
+            {
+                "name": "Koori Zokusei Danshi to Cool na Douryou Joshi",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Koroshi Ai": [
+            {
+                "name": "Koroshi Ai",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kotonoha no Niwa": [
+            {
+                "name": "Kotonoha no Niwa",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Koukyuu no Karasu": [
+            {
+                "name": "Koukyuu no Karasu",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kubo-san wa Mob wo Yurusanai": [
+            {
+                "name": "Kubo-san wa Mob wo Yurusanai",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kumichou Musume to Sewagakari": [
+            {
+                "name": "Kumichou Musume to Sewagakari",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kuro no Shoukanshi": [
+            {
+                "name": "Kuro no Shoukanshi",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kuroko no Basket": [
+            {
+                "name": "Kuroko no Basket",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Kuroko no Basket 2nd Season",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Kuroko no Basket 3rd Season",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Kuroko no Basket Movie 4: Last Game",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 4,
+                "type": "Movie"
+            }
+        ],
+        "Kuroshitsuji": [
+            {
+                "name": "Kuroshitsuji",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kusuriya no Hitorigoto": [
+            {
+                "name": "Kusuriya no Hitorigoto",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kuzu no Honkai": [
+            {
+                "name": "Kuzu no Honkai",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Kyokou Suiri": [
+            {
+                "name": "Kyokou Suiri",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Kyokou Suiri Season 2",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "2",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Kyoukai no Kanata": [
+            {
+                "name": "Kyoukai no Kanata",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Leadale no Daichi nite": [
+            {
+                "name": "Leadale no Daichi nite",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Level 1 dakedo Unique Skill de Saikyou desu": [
+            {
+                "name": "Level 1 dakedo Unique Skill de Saikyou desu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Liar Liar": [
+            {
+                "name": "Liar Liar",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Log Horizon": [
+            {
+                "name": "Log Horizon",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Lovely\u2605Complex": [
+            {
+                "name": "Lovely\u2605Complex",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Lycoris Recoil": [
+            {
+                "name": "Lycoris Recoil",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Made in Abyss": [
+            {
+                "name": "Made in Abyss",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Magi: Sinbad no Bouken (TV)": [
+            {
+                "name": "Magi: Sinbad no Bouken (TV)",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Magi: The Kingdom of Magic": [
+            {
+                "name": "Magi: The Kingdom of Magic",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Magi: The Labyrinth of Magic": [
+            {
+                "name": "Magi: The Labyrinth of Magic",
+                "status": "Plan to Watch",
+                "ep": "25",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mahouka Koukou no Rettousei": [
+            {
+                "name": "Mahouka Koukou no Rettousei",
+                "status": "Completed",
+                "ep": "26",
+                "epw": "26",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Mahouka Koukou no Rettousei: Raihousha-hen",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Mahoutsukai no Yome": [
+            {
+                "name": "Mahoutsukai no Yome",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Mahoutsukai no Yome Season 2",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Mahoutsukai no Yome: Hoshi Matsu Hito",
+                "status": "Completed",
+                "ep": "3",
+                "epw": "3",
+                "season": 3,
+                "type": "OVA"
+            },
+            {
+                "name": "Mahoutsukai no Yome: Nishi no Shounen to Seiran no Kishi",
+                "status": "Plan to Watch",
+                "ep": "3",
+                "epw": "1",
+                "season": 4,
+                "type": "OVA"
+            }
+        ],
+        "Mahoutsukai Reimeiki": [
+            {
+                "name": "Mahoutsukai Reimeiki",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mairimashita! Iruma-kun": [
+            {
+                "name": "Mairimashita! Iruma-kun",
+                "status": "Plan to Watch",
+                "ep": "23",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Majutsushi Orphen Hagure Tabi": [
+            {
+                "name": "Majutsushi Orphen Hagure Tabi",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mamahaha no Tsurego ga Motokano datta": [
+            {
+                "name": "Mamahaha no Tsurego ga Motokano datta",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou": [
+            {
+                "name": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou II Part 2",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Maou-sama, Retry!": [
+            {
+                "name": "Maou-sama, Retry!",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Masamune-kun no Revenge": [
+            {
+                "name": "Masamune-kun no Revenge",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Masamune-kun no Revenge R",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Masamune-kun no Revenge: Uchi no Mama ni Kagitte/Tsunade Shima, Futatabi./12-Ji wo Sugita Cinderella",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 3,
+                "type": "OVA"
+            }
+        ],
+        "Mashle": [
+            {
+                "name": "Mashle",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Mashle 2nd Season",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Megami-ryou no Ryoubo-kun.": [
+            {
+                "name": "Megami-ryou no Ryoubo-kun.",
+                "status": "Plan to Watch",
+                "ep": "10",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Midara na Ao-chan wa Benkyou ga Dekinai": [
+            {
+                "name": "Midara na Ao-chan wa Benkyou ga Dekinai",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Miira no Kaikata": [
+            {
+                "name": "Miira no Kaikata",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mirai Nikki (TV)": [
+            {
+                "name": "Mirai Nikki (TV)",
+                "status": "On-Hold",
+                "ep": "26",
+                "epw": "15",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mo Dao Zu Shi": [
+            {
+                "name": "Mo Dao Zu Shi",
+                "status": "Plan to Watch",
+                "ep": "15",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Mob Psycho 100": [
+            {
+                "name": "Mob Psycho 100",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "3",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Momochi-san Chi no Ayakashi Ouji": [
+            {
+                "name": "Momochi-san Chi no Ayakashi Ouji",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Monogatari Series: Second Season": [
+            {
+                "name": "Monogatari Series: Second Season",
+                "status": "Plan to Watch",
+                "ep": "26",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mononogatari": [
+            {
+                "name": "Mononogatari",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Mononogatari 2nd Season",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Mononoke": [
+            {
+                "name": "Mononoke",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Mononoke Hime",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            }
+        ],
+        "Monster": [
+            {
+                "name": "Monster",
+                "status": "Plan to Watch",
+                "ep": "74",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Monster Musume no Iru Nichijou",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Musaigen no Phantom World": [
+            {
+                "name": "Musaigen no Phantom World",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mushishi": [
+            {
+                "name": "Mushishi",
+                "status": "Plan to Watch",
+                "ep": "26",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Mushoku Tensei II: Isekai Ittara Honki Dasu": [
+            {
+                "name": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Special"
+            },
+            {
+                "name": "Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Mushoku Tensei: Isekai Ittara Honki Dasu": [
+            {
+                "name": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Mushoku Tensei: Isekai Ittara Honki Dasu - Eris no Goblin Toubatsu",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Special"
+            },
+            {
+                "name": "Mushoku Tensei: Isekai Ittara Honki Dasu Part 2",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "My Home Hero": [
+            {
+                "name": "My Home Hero",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Nakitai Watashi wa Neko wo Kaburu": [
+            {
+                "name": "Nakitai Watashi wa Neko wo Kaburu",
+                "status": "On-Hold",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Nanatsu no Maken ga Shihai suru": [
+            {
+                "name": "Nanatsu no Maken ga Shihai suru",
+                "status": "Plan to Watch",
+                "ep": "15",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Nanatsu no Taizai": [
+            {
+                "name": "Nanatsu no Taizai",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Nanatsu no Taizai Movie 1: Tenkuu no Torawarebito",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            },
+            {
+                "name": "Nanatsu no Taizai: Funnu no Shinpan",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Nanatsu no Taizai: Imashime no Fukkatsu",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "Nanatsu no Taizai: Imashime no Fukkatsu Joshou",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 5,
+                "type": "Special"
+            },
+            {
+                "name": "Nanatsu no Taizai: Kamigami no Gekirin",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 6,
+                "type": "TV"
+            },
+            {
+                "name": "Nanatsu no Taizai: Mokushiroku no Yonkishi",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 7,
+                "type": "TV"
+            }
+        ],
+        "Naruto": [
+            {
+                "name": "Naruto",
+                "status": "Completed",
+                "ep": "220",
+                "epw": "220",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Naruto (Shinsaku Anime)",
+                "status": "Plan to Watch",
+                "ep": "4",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Naruto Movie 2: Dai Gekitotsu! Maboroshi no Chiteiiseki Dattebayo!",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 3,
+                "type": "Movie"
+            },
+            {
+                "name": "Naruto: Shippuuden",
+                "status": "Completed",
+                "ep": "500",
+                "epw": "500",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "Naruto: Shippuuden Movie 2 - Kizuna",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 5,
+                "type": "Movie"
+            },
+            {
+                "name": "Naruto: Shippuuden Movie 5 - Blood Prison",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 6,
+                "type": "Movie"
+            },
+            {
+                "name": "Naruto: Shippuuden Movie 6 - Road to Ninja",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 7,
+                "type": "Movie"
+            }
+        ],
+        "Natsu e no Tunnel, Sayonara no Deguchi": [
+            {
+                "name": "Natsu e no Tunnel, Sayonara no Deguchi",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Natsume Yuujinchou": [
+            {
+                "name": "Natsume Yuujinchou",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Neon Genesis Evangelion: The End of Evangelion": [
+            {
+                "name": "Neon Genesis Evangelion: The End of Evangelion",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Ni no Kuni": [
+            {
+                "name": "Ni no Kuni",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Nihon Chinbotsu 2020": [
+            {
+                "name": "Nihon Chinbotsu 2020",
+                "status": "Plan to Watch",
+                "ep": "10",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Nijiiro Days": [
+            {
+                "name": "Nijiiro Days",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu": [
+            {
+                "name": "Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Nisekoi": [
+            {
+                "name": "Nisekoi",
+                "status": "Plan to Watch",
+                "ep": "20",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "No Game No Life": [
+            {
+                "name": "No Game No Life",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Noragami": [
+            {
+                "name": "Noragami",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Noragami Aragoto",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Noumin Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta.": [
+            {
+                "name": "Noumin Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta.",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "6",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Nozomanu Fushi no Boukensha": [
+            {
+                "name": "Nozomanu Fushi no Boukensha",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Nurarihyon no Mago": [
+            {
+                "name": "Nurarihyon no Mago",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Odd Taxi": [
+            {
+                "name": "Odd Taxi",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ojou to Banken-kun": [
+            {
+                "name": "Ojou to Banken-kun",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Okashi na Tensei": [
+            {
+                "name": "Okashi na Tensei",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Omoi, Omoware, Furi, Furare": [
+            {
+                "name": "Omoi, Omoware, Furi, Furare",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Omoide no Marnie": [
+            {
+                "name": "Omoide no Marnie",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "One Piece": [
+            {
+                "name": "One Piece",
+                "status": "On-Hold",
+                "ep": "0",
+                "epw": "160",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "One Piece Movie 01",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 2,
+                "type": "Movie"
+            }
+        ],
+        "One Punch Man": [
+            {
+                "name": "One Punch Man",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "One Punch Man 2nd Season",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "One Punch Man 3",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Ookami Kodomo no Ame to Yuki": [
+            {
+                "name": "Ookami Kodomo no Ame to Yuki",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Ookami Shoujo to Kuro Ouji": [
+            {
+                "name": "Ookami Shoujo to Kuro Ouji",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ookami to Koushinryou": [
+            {
+                "name": "Ookami to Koushinryou",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Ookami to Koushinryou II",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Ookami to Koushinryou: Merchant Meets the Wise Wolf",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Ore dake Haireru Kakushi Dungeon": [
+            {
+                "name": "Ore dake Haireru Kakushi Dungeon",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ore dake Level Up na Ken": [
+            {
+                "name": "Ore dake Level Up na Ken",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Orient": [
+            {
+                "name": "Orient",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Osake wa Fuufu ni Natte kara": [
+            {
+                "name": "Osake wa Fuufu ni Natte kara",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Otome Game Sekai wa Mob ni Kibishii Sekai desu": [
+            {
+                "name": "Otome Game Sekai wa Mob ni Kibishii Sekai desu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Otonari ni Ginga": [
+            {
+                "name": "Otonari ni Ginga",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken": [
+            {
+                "name": "Otonari no Tenshi-sama ni Itsunomanika Dame Ningen ni Sareteita Ken",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Ousama Ranking": [
+            {
+                "name": "Ousama Ranking",
+                "status": "Plan to Watch",
+                "ep": "23",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Overlord": [
+            {
+                "name": "Overlord",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Overlord II",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Overlord III",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Overlord IV",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "Overlord Movie 2: Shikkoku no Eiyuu",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 5,
+                "type": "Movie"
+            }
+        ],
+        "Owari no Seraph": [
+            {
+                "name": "Owari no Seraph",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Owarimonogatari 2nd Season": [
+            {
+                "name": "Owarimonogatari 2nd Season",
+                "status": "Plan to Watch",
+                "ep": "7",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Paradox Live the Animation": [
+            {
+                "name": "Paradox Live the Animation",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Paripi Koumei": [
+            {
+                "name": "Paripi Koumei",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Plastic Memories": [
+            {
+                "name": "Plastic Memories",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Platinum End": [
+            {
+                "name": "Platinum End",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Plunderer": [
+            {
+                "name": "Plunderer",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Pokemon XY: New Year Special": [
+            {
+                "name": "Pokemon XY: New Year Special",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Special"
+            }
+        ],
+        "Psycho-Pass": [
+            {
+                "name": "Psycho-Pass",
+                "status": "Completed",
+                "ep": "22",
+                "epw": "22",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Psycho-Pass 2",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Psycho-Pass 3",
+                "status": "Completed",
+                "ep": "8",
+                "epw": "8",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Psycho-Pass 3: First Inspector",
+                "status": "Completed",
+                "ep": "3",
+                "epw": "3",
+                "season": 4,
+                "type": "ONA"
+            },
+            {
+                "name": "Psycho-Pass Movie",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 5,
+                "type": "Movie"
+            },
+            {
+                "name": "Psycho-Pass: Sinners of the System Case.1 - Tsumi to Batsu",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 6,
+                "type": "Movie"
+            },
+            {
+                "name": "Psycho-Pass: Sinners of the System Case.2 - First Guardian",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 7,
+                "type": "Movie"
+            },
+            {
+                "name": "Psycho-Pass: Sinners of the System Case.3 - Onshuu no Kanata ni\uff3f\uff3f",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 8,
+                "type": "Movie"
+            }
+        ],
+        "Quanzhi Fashi": [
+            {
+                "name": "Quanzhi Fashi",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            },
+            {
+                "name": "Quanzhi Fashi II",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 2,
+                "type": "ONA"
+            }
+        ],
+        "Ququ Bucai, Zaixia Yeguai": [
+            {
+                "name": "Ququ Bucai, Zaixia Yeguai",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Rakudai Kishi no Cavalry": [
+            {
+                "name": "Rakudai Kishi no Cavalry",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Re-Main": [
+            {
+                "name": "Re-Main",
+                "status": "On-Hold",
+                "ep": "12",
+                "epw": "4",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Re:Zero kara Hajimeru Isekai Seikatsu": [
+            {
+                "name": "Re:Zero kara Hajimeru Isekai Seikatsu",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Re:Zero kara Hajimeru Isekai Seikatsu - Hyouketsu no Kizuna",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            },
+            {
+                "name": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 4,
+                "type": "TV"
+            }
+        ],
+        "ReLIFE": [
+            {
+                "name": "ReLIFE",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Rikei ga Koi ni Ochita no de Shoumei shitemita.": [
+            {
+                "name": "Rikei ga Koi ni Ochita no de Shoumei shitemita.",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Rokka no Yuusha": [
+            {
+                "name": "Rokka no Yuusha",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Rokudenashi Majutsu Koushi to Akashic Records": [
+            {
+                "name": "Rokudenashi Majutsu Koushi to Akashic Records",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Romantic Killer": [
+            {
+                "name": "Romantic Killer",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Rurouni Kenshin: Meiji Kenkaku Romantan": [
+            {
+                "name": "Rurouni Kenshin: Meiji Kenkaku Romantan",
+                "status": "Plan to Watch",
+                "ep": "94",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Rurouni Kenshin: Meiji Kenkaku Romantan (2023)",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega": [
+            {
+                "name": "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Saenai Heroine no Sodatekata": [
+            {
+                "name": "Saenai Heroine no Sodatekata",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "1",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Saihate no Paladin": [
+            {
+                "name": "Saihate no Paladin",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Saihate no Paladin: Tetsusabi no Yama no Ou",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Saikyou Onmyouji no Isekai Tenseiki": [
+            {
+                "name": "Saikyou Onmyouji no Isekai Tenseiki",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sakamoto desu ga?": [
+            {
+                "name": "Sakamoto desu ga?",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "2",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sakura-sou no Pet na Kanojo": [
+            {
+                "name": "Sakura-sou no Pet na Kanojo",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sakurada Reset": [
+            {
+                "name": "Sakurada Reset",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Samurai Champloo": [
+            {
+                "name": "Samurai Champloo",
+                "status": "Plan to Watch",
+                "ep": "26",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sankarea": [
+            {
+                "name": "Sankarea",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sasaki to Miyano": [
+            {
+                "name": "Sasaki to Miyano",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Satsuriku no Tenshi": [
+            {
+                "name": "Satsuriku no Tenshi",
+                "status": "Completed",
+                "ep": "16",
+                "epw": "16",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Seija Musou: Salaryman, Isekai de Ikinokoru Tame ni Ayumu Michi": [
+            {
+                "name": "Seija Musou: Salaryman, Isekai de Ikinokoru Tame ni Ayumu Michi",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Seiken Densetsu: Legend of Mana - The Teardrop Crystal": [
+            {
+                "name": "Seiken Densetsu: Legend of Mana - The Teardrop Crystal",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Seirei Gensouki": [
+            {
+                "name": "Seirei Gensouki",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai": [
+            {
+                "name": "Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai": [
+            {
+                "name": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Seitokai Yakuindomo": [
+            {
+                "name": "Seitokai Yakuindomo",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Seitokai Yakuindomo*",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru": [
+            {
+                "name": "Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sen to Chihiro no Kamikakushi": [
+            {
+                "name": "Sen to Chihiro no Kamikakushi",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Senpai ga Uzai Kouhai no Hanashi": [
+            {
+                "name": "Senpai ga Uzai Kouhai no Hanashi",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "2",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shaman King (2021)": [
+            {
+                "name": "Shaman King (2021)",
+                "status": "Plan to Watch",
+                "ep": "52",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shigatsu wa Kimi no Uso": [
+            {
+                "name": "Shigatsu wa Kimi no Uso",
+                "status": "Dropped",
+                "ep": "22",
+                "epw": "2",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shiguang Dailiren": [
+            {
+                "name": "Shiguang Dailiren",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 1,
+                "type": "ONA"
+            },
+            {
+                "name": "Shiguang Dailiren II",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "ONA"
+            }
+        ],
+        "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru": [
+            {
+                "name": "Shijou Saikyou no Daimaou, Murabito A ni Tensei suru",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shika no Ou: Yuna to Yakusoku no Tabi": [
+            {
+                "name": "Shika no Ou: Yuna to Yakusoku no Tabi",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Shikkakumon no Saikyou Kenja": [
+            {
+                "name": "Shikkakumon no Saikyou Kenja",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shimashita": [
+            {
+                "name": "Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shimashita",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "2",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru": [
+            {
+                "name": "Shinchou Yuusha: Kono Yuusha ga Ore Tueee Kuse ni Shinchou Sugiru",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shingeki no Kyojin": [
+            {
+                "name": "Shingeki no Kyojin",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Shingeki no Kyojin Movie 1: Guren no Yumiya",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            },
+            {
+                "name": "Shingeki no Kyojin OVA",
+                "status": "Completed",
+                "ep": "3",
+                "epw": "3",
+                "season": 3,
+                "type": "OVA"
+            },
+            {
+                "name": "Shingeki no Kyojin Season 2",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "Shingeki no Kyojin Season 3",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 5,
+                "type": "TV"
+            },
+            {
+                "name": "Shingeki no Kyojin Season 3 Part 2",
+                "status": "Completed",
+                "ep": "10",
+                "epw": "10",
+                "season": 6,
+                "type": "TV"
+            },
+            {
+                "name": "Shingeki no Kyojin: The Final Season",
+                "status": "Completed",
+                "ep": "16",
+                "epw": "16",
+                "season": 7,
+                "type": "TV"
+            },
+            {
+                "name": "Shingeki no Kyojin: The Final Season - Kanketsu-hen",
+                "status": "Watching",
+                "ep": "2",
+                "epw": "1",
+                "season": 8,
+                "type": "Special"
+            },
+            {
+                "name": "Shingeki no Kyojin: The Final Season Part 2",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 9,
+                "type": "TV"
+            }
+        ],
+        "Shinigami Bocchan to Kuro Maid": [
+            {
+                "name": "Shinigami Bocchan to Kuro Maid",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Shinigami Bocchan to Kuro Maid 2nd Season",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Shinobi no Ittoki": [
+            {
+                "name": "Shinobi no Ittoki",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "3",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shiro Seijo to Kuro Bokushi": [
+            {
+                "name": "Shiro Seijo to Kuro Bokushi",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Shokugeki no Souma": [
+            {
+                "name": "Shokugeki no Souma",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Shokugeki no Souma: Gou no Sara",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Shokugeki no Souma: Ni no Sara",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Shokugeki no Souma: San no Sara",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "Shokugeki no Souma: San no Sara - Tootsuki Ressha-hen",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 5,
+                "type": "TV"
+            },
+            {
+                "name": "Shokugeki no Souma: Shin no Sara",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 6,
+                "type": "TV"
+            }
+        ],
+        "Shuumatsu no Walk\u00fcre": [
+            {
+                "name": "Shuumatsu no Walk\u00fcre",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "ONA"
+            },
+            {
+                "name": "Shuumatsu no Walk\u00fcre II",
+                "status": "Completed",
+                "ep": "10",
+                "epw": "10",
+                "season": 2,
+                "type": "ONA"
+            },
+            {
+                "name": "Shuumatsu no Walk\u00fcre II Part 2",
+                "status": "Completed",
+                "ep": "5",
+                "epw": "5",
+                "season": 3,
+                "type": "ONA"
+            }
+        ],
+        "Sirius": [
+            {
+                "name": "Sirius",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sono Bisque Doll wa Koi wo Suru": [
+            {
+                "name": "Sono Bisque Doll wa Koi wo Suru",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sora no Aosa wo Shiru Hito yo": [
+            {
+                "name": "Sora no Aosa wo Shiru Hito yo",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Soredemo Ayumu wa Yosetekuru": [
+            {
+                "name": "Soredemo Ayumu wa Yosetekuru",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Soul Eater": [
+            {
+                "name": "Soul Eater",
+                "status": "Plan to Watch",
+                "ep": "51",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Sousou no Frieren": [
+            {
+                "name": "Sousou no Frieren",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Spriggan": [
+            {
+                "name": "Spriggan",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            },
+            {
+                "name": "Spriggan (ONA)",
+                "status": "Completed",
+                "ep": "6",
+                "epw": "6",
+                "season": 2,
+                "type": "ONA"
+            }
+        ],
+        "Spy Kyoushitsu": [
+            {
+                "name": "Spy Kyoushitsu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Spy x Family": [
+            {
+                "name": "Spy x Family",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Spy x Family Part 2",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Steins;Gate": [
+            {
+                "name": "Steins;Gate",
+                "status": "Plan to Watch",
+                "ep": "24",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Suki na Ko ga Megane wo Wasureta": [
+            {
+                "name": "Suki na Ko ga Megane wo Wasureta",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Suki tte Ii na yo.": [
+            {
+                "name": "Suki tte Ii na yo.",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Summer Ghost": [
+            {
+                "name": "Summer Ghost",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Summer Wars": [
+            {
+                "name": "Summer Wars",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Summertime Render": [
+            {
+                "name": "Summertime Render",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Suzume no Tojimari": [
+            {
+                "name": "Suzume no Tojimari",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Sword Art Online": [
+            {
+                "name": "Sword Art Online",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Sword Art Online Alternative: Gun Gale Online",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Sword Art Online II",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Sword Art Online II: Debriefing",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 4,
+                "type": "Special"
+            },
+            {
+                "name": "Sword Art Online Movie: Ordinal Scale",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 5,
+                "type": "Movie"
+            },
+            {
+                "name": "Sword Art Online: Alicization",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 6,
+                "type": "TV"
+            },
+            {
+                "name": "Sword Art Online: Alicization - War of Underworld",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 7,
+                "type": "TV"
+            },
+            {
+                "name": "Sword Art Online: Alicization - War of Underworld 2nd Season",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 8,
+                "type": "TV"
+            }
+        ],
+        "Synduality: Noir": [
+            {
+                "name": "Synduality: Noir",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tada-kun wa Koi wo Shinai": [
+            {
+                "name": "Tada-kun wa Koi wo Shinai",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Taishou Otome Otogibanashi": [
+            {
+                "name": "Taishou Otome Otogibanashi",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Takt Op. Destiny": [
+            {
+                "name": "Takt Op. Destiny",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tamako Love Story": [
+            {
+                "name": "Tamako Love Story",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Tamako Market": [
+            {
+                "name": "Tamako Market",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tantei wa Mou, Shindeiru.": [
+            {
+                "name": "Tantei wa Mou, Shindeiru.",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Tantei wa Mou, Shindeiru. Season 2",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Tate no Yuusha no Nariagari": [
+            {
+                "name": "Tate no Yuusha no Nariagari",
+                "status": "Completed",
+                "ep": "25",
+                "epw": "25",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Tate no Yuusha no Nariagari Season 2",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Tate no Yuusha no Nariagari Season 3",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Temple": [
+            {
+                "name": "Temple",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tengen Toppa Gurren Lagann": [
+            {
+                "name": "Tengen Toppa Gurren Lagann",
+                "status": "Completed",
+                "ep": "27",
+                "epw": "27",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Tengen Toppa Gurren Lagann Movie 2: Lagann-hen",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            }
+        ],
+        "Tengoku Daimakyou": [
+            {
+                "name": "Tengoku Daimakyou",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tenki no Ko": [
+            {
+                "name": "Tenki no Ko",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Tenkuu no Shiro Laputa": [
+            {
+                "name": "Tenkuu no Shiro Laputa",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Tensai Ouji no Akaji Kokka Saisei Jutsu": [
+            {
+                "name": "Tensai Ouji no Akaji Kokka Saisei Jutsu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito": [
+            {
+                "name": "Tensei Kizoku no Isekai Boukenroku: Jichou wo Shiranai Kamigami no Shito",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu": [
+            {
+                "name": "Tensei shitara Dainana Ouji Datta node, Kimama ni Majutsu wo Kiwamemasu",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tensei shitara Slime Datta Ken": [
+            {
+                "name": "Tensei shitara Slime Datta Ken",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Tensei shitara Slime Datta Ken 2nd Season",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Tensei shitara Slime Datta Ken 2nd Season Part 2",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Tensei shitara Slime Datta Ken 3rd Season",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 4,
+                "type": "TV"
+            },
+            {
+                "name": "Tensura Nikki: Tensei shitara Slime Datta Ken",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 5,
+                "type": "TV"
+            }
+        ],
+        "The God of High School": [
+            {
+                "name": "The God of High School",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "The Last: Naruto the Movie": [
+            {
+                "name": "The Last: Naruto the Movie",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "The Perfect World": [
+            {
+                "name": "The Perfect World",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Music"
+            }
+        ],
+        "Tian Guan Cifu": [
+            {
+                "name": "Tian Guan Cifu",
+                "status": "Plan to Watch",
+                "ep": "11",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ],
+        "Toki wo Kakeru Shoujo": [
+            {
+                "name": "Toki wo Kakeru Shoujo",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Tokidoki Bosotto Russia-go de Dereru Tonari no Aalya-san": [
+            {
+                "name": "Tokidoki Bosotto Russia-go de Dereru Tonari no Aalya-san",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tokyo Ghoul": [
+            {
+                "name": "Tokyo Ghoul",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Tokyo Ghoul \u221aA",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Tokyo Ghoul:re",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 3,
+                "type": "TV"
+            },
+            {
+                "name": "Tokyo Ghoul:re 2nd Season",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 4,
+                "type": "TV"
+            }
+        ],
+        "Tokyo Revengers": [
+            {
+                "name": "Tokyo Revengers",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Tokyo Revengers: Seiya Kessen-hen",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Tokyo Revengers: Tenjiku-hen",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Tomo-chan wa Onnanoko!": [
+            {
+                "name": "Tomo-chan wa Onnanoko!",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tonari no Kaibutsu-kun": [
+            {
+                "name": "Tonari no Kaibutsu-kun",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tonari no Totoro": [
+            {
+                "name": "Tonari no Totoro",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Tondemo Skill de Isekai Hourou Meshi": [
+            {
+                "name": "Tondemo Skill de Isekai Hourou Meshi",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tonikaku Kawaii": [
+            {
+                "name": "Tonikaku Kawaii",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Toradora!": [
+            {
+                "name": "Toradora!",
+                "status": "Watching",
+                "ep": "25",
+                "epw": "17",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Trigun Stampede": [
+            {
+                "name": "Trigun Stampede",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tsuki ga Kirei": [
+            {
+                "name": "Tsuki ga Kirei",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tsuki ga Michibiku Isekai Douchuu": [
+            {
+                "name": "Tsuki ga Michibiku Isekai Douchuu",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tsurezure Children": [
+            {
+                "name": "Tsurezure Children",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Tsurune: Kazemai Koukou Kyuudou-bu": [
+            {
+                "name": "Tsurune: Kazemai Koukou Kyuudou-bu",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Uchi no Kaisha no Chiisai Senpai no Hanashi": [
+            {
+                "name": "Uchi no Kaisha no Chiisai Senpai no Hanashi",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "1",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Uchiage Hanabi, Shita kara Miru ka? Yoko kara Miru ka?": [
+            {
+                "name": "Uchiage Hanabi, Shita kara Miru ka? Yoko kara Miru ka?",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Umibe no \u00c9tranger": [
+            {
+                "name": "Umibe no \u00c9tranger",
+                "status": "Plan to Watch",
+                "ep": "1",
+                "epw": "0",
+                "season": 1,
+                "type": "Movie"
+            }
+        ],
+        "Undead Girl Murder Farce": [
+            {
+                "name": "Undead Girl Murder Farce",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "UQ Holder! Mahou Sensei Negima! 2": [
+            {
+                "name": "UQ Holder! Mahou Sensei Negima! 2",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Vanitas no Karte": [
+            {
+                "name": "Vanitas no Karte",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Vinland Saga": [
+            {
+                "name": "Vinland Saga",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Vinland Saga Season 2",
+                "status": "Completed",
+                "ep": "24",
+                "epw": "24",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Violet Evergarden": [
+            {
+                "name": "Violet Evergarden",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 2,
+                "type": "Movie"
+            },
+            {
+                "name": "Violet Evergarden Movie",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 3,
+                "type": "Movie"
+            },
+            {
+                "name": "Violet Evergarden: Kitto \"Ai\" wo Shiru Hi ga Kuru no Darou",
+                "status": "Completed",
+                "ep": "1",
+                "epw": "1",
+                "season": 4,
+                "type": "Special"
+            }
+        ],
+        "Watashi no Shiawase na Kekkon": [
+            {
+                "name": "Watashi no Shiawase na Kekkon",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Wotaku ni Koi wa Muzukashii": [
+            {
+                "name": "Wotaku ni Koi wa Muzukashii",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Xian Wang de Richang Shenghuo": [
+            {
+                "name": "Xian Wang de Richang Shenghuo",
+                "status": "Completed",
+                "ep": "15",
+                "epw": "15",
+                "season": 1,
+                "type": "ONA"
+            },
+            {
+                "name": "Xian Wang de Richang Shenghuo 2",
+                "status": "On-Hold",
+                "ep": "12",
+                "epw": "6",
+                "season": 2,
+                "type": "ONA"
+            },
+            {
+                "name": "Xian Wang de Richang Shenghuo 3",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 3,
+                "type": "ONA"
+            }
+        ],
+        "Yagate Kimi ni Naru": [
+            {
+                "name": "Yagate Kimi ni Naru",
+                "status": "Plan to Watch",
+                "ep": "13",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yahari Ore no Seishun Love Comedy wa Machigatteiru.": [
+            {
+                "name": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Kan",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Yahari Ore no Seishun Love Comedy wa Machigatteiru. Zoku",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Yakusoku no Neverland": [
+            {
+                "name": "Yakusoku no Neverland",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Yakusoku no Neverland 2nd Season",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 2,
+                "type": "TV"
+            }
+        ],
+        "Yamada-kun to 7-nin no Majo": [
+            {
+                "name": "Yamada-kun to 7-nin no Majo",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "3",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yamada-kun to Lv999 no Koi wo Suru": [
+            {
+                "name": "Yamada-kun to Lv999 no Koi wo Suru",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yesterday wo Utatte": [
+            {
+                "name": "Yesterday wo Utatte",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yi Ren Zhi Xia": [
+            {
+                "name": "Yi Ren Zhi Xia",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yofukashi no Uta": [
+            {
+                "name": "Yofukashi no Uta",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e": [
+            {
+                "name": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e",
+                "status": "Completed",
+                "ep": "12",
+                "epw": "12",
+                "season": 1,
+                "type": "TV"
+            },
+            {
+                "name": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 2nd Season",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 2,
+                "type": "TV"
+            },
+            {
+                "name": "Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e 3rd Season",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 3,
+                "type": "TV"
+            }
+        ],
+        "Yubisaki to Renren": [
+            {
+                "name": "Yubisaki to Renren",
+                "status": "Plan to Watch",
+                "ep": "0",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yumemiru Danshi wa Genjitsushugisha": [
+            {
+                "name": "Yumemiru Danshi wa Genjitsushugisha",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yuukoku no Moriarty": [
+            {
+                "name": "Yuukoku no Moriarty",
+                "status": "Plan to Watch",
+                "ep": "11",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau": [
+            {
+                "name": "Yuusha Party wo Tsuihou sareta Beast Tamer, Saikyoushu no Nekomimi Shoujo to Deau",
+                "status": "Completed",
+                "ep": "13",
+                "epw": "13",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Yuusha, Yamemasu": [
+            {
+                "name": "Yuusha, Yamemasu",
+                "status": "Dropped",
+                "ep": "12",
+                "epw": "1",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Zankyou no Terror": [
+            {
+                "name": "Zankyou no Terror",
+                "status": "Completed",
+                "ep": "11",
+                "epw": "11",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto": [
+            {
+                "name": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "TV"
+            }
+        ],
+        "Zuihou de Zhaohuan Shi": [
+            {
+                "name": "Zuihou de Zhaohuan Shi",
+                "status": "Plan to Watch",
+                "ep": "12",
+                "epw": "0",
+                "season": 1,
+                "type": "ONA"
+            }
+        ]
+    }
+}

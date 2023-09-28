@@ -16,3 +16,5 @@ moviepy~=1.0.3
 curses-menu==0.7.1
 keyboard~=0.13.5
 
+
+colorama~=0.4.5
