@@ -2,38 +2,44 @@
     "stats": {
         "total": 417,
         "status": {
-            "completed": 162,
+            "completed": 163,
             "watching": 7,
-            "plan to watch": 263,
-            "dropped": 21,
+            "plan to watch": 262,
+            "dropped": 20,
             "on-hold": 8
         },
         "status_mal": {
-            "Completed": 278,
+            "Completed": 280,
             "Watching": 7,
-            "Plan to watch": 263,
-            "Dropped": 21,
+            "Plan to watch": 262,
+            "Dropped": 20,
             "On-hold": 8
         },
         "ep": {
             "total": 8729,
-            "completed": 4583,
+            "completed": 4596,
             "watching": 112,
-            "plan to watch": 3395,
-            "dropped": 271,
+            "plan to watch": 3394,
+            "dropped": 259,
             "on-hold": 368
         },
         "epw": {
-            "total": 5195,
-            "completed": 4583,
-            "watching": 76,
+            "total": 5191,
+            "completed": 4582,
+            "watching": 75,
             "plan to watch": 34,
-            "dropped": 69,
+            "dropped": 67,
             "on-hold": 433
         }
     },
     "faults": {
-        "not_completely_watched": []
+        "not_completely_watched": [
+            "5-toubun no Hanayome\u223d",
+            "91 Days: Toki no Asase/Subete no Kinou/Ashita, Mata Ashita",
+            "Assassins Pride",
+            "Suki na Ko ga Megane wo Wasureta",
+            "Watashi no Shiawase na Kekkon"
+        ]
     },
     "animes": {
         "\"Oshi no Ko\"": [
@@ -85,7 +91,7 @@
                 "name": "5-toubun no Hanayome\u223d",
                 "status": "Completed",
                 "ep": "2",
-                "epw": "2",
+                "epw": "1",
                 "season": 4,
                 "type": "Special"
             }
@@ -145,7 +151,7 @@
             },
             {
                 "name": "91 Days: Toki no Asase/Subete no Kinou/Ashita, Mata Ashita",
-                "status": "Plan to Watch",
+                "status": "Completed",
                 "ep": "1",
                 "epw": "0",
                 "season": 2,
@@ -335,7 +341,7 @@
         "Assassins Pride": [
             {
                 "name": "Assassins Pride",
-                "status": "Dropped",
+                "status": "Completed",
                 "ep": "12",
                 "epw": "2",
                 "season": 1,
@@ -4533,7 +4539,7 @@
                 "name": "Suki na Ko ga Megane wo Wasureta",
                 "status": "Completed",
                 "ep": "13",
-                "epw": "13",
+                "epw": "12",
                 "season": 1,
                 "type": "TV"
             }
@@ -5063,7 +5069,7 @@
                 "name": "Toradora!",
                 "status": "Watching",
                 "ep": "25",
-                "epw": "17",
+                "epw": "16",
                 "season": 1,
                 "type": "TV"
             }
@@ -5235,7 +5241,7 @@
                 "name": "Watashi no Shiawase na Kekkon",
                 "status": "Completed",
                 "ep": "12",
-                "epw": "12",
+                "epw": "11",
                 "season": 1,
                 "type": "TV"
             }

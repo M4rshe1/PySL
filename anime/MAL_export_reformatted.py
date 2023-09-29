@@ -3,6 +3,8 @@ import tkinter as tk
 import tkinter.filedialog as filedialog
 import os
 import json
+
+
 from colorama import Fore, Style, Back
 
 animes = {"stats": {}, "faults": {"not_completely_watched": []}, "animes": {}}
@@ -28,15 +30,22 @@ def get_file_content(file_path):
         return xml_file.read()
 
 
+def rounded_percentage(value, total):
+    if value == 0:
+        return 0
+    percentage = max(value / total * 100, 1)
+    return round(percentage)
+
+
 def print_bare(watching, watched, hold, dropped, planned, total, title):
     print()
     print(title)
 
-    print(Fore.GREEN + Back.GREEN + "#" * (round(watching / total * 100)), end="")
-    print(Fore.BLUE + Back.BLUE + "#" * (round(watched / total * 100)), end="")
-    print(Fore.YELLOW + Back.YELLOW + "#" * (round(hold / total * 100)), end="")
-    print(Fore.RED + Back.RED + "#" * (round(dropped / total * 100)), end="")
-    print(Fore.LIGHTWHITE_EX + Back.LIGHTWHITE_EX + "#" * (round(planned / total * 100)), end="")
+    print(Fore.GREEN + Back.GREEN + "#" * rounded_percentage(watching, total), end="")
+    print(Fore.BLUE + Back.BLUE + "#" * rounded_percentage(watched, total), end="")
+    print(Fore.YELLOW + Back.YELLOW + "#" * rounded_percentage(hold, total), end="")
+    print(Fore.RED + Back.RED + "#" * rounded_percentage(dropped, total), end="")
+    print(Fore.LIGHTWHITE_EX + Back.LIGHTWHITE_EX + "#" * rounded_percentage(planned, total), end="")
     print(Style.RESET_ALL)
 
 
@@ -167,10 +176,11 @@ if __name__ == "__main__":
                         f" : {count_hold:<15} : {str(round(count_hold_ep / count_ep * 100, 2)) + '%':<12} : {count_hold_ep:<10}"
                         f" : {str(round(count_hold_ep / count_ep * 100, 2)) + '%':<12} : {count_hold_epw:<18}"
                         f" : {str(round(count_hold_epw / count_epw * 100, 2)) + '%'}")
-    print(Fore.RED + f"  Dropped         : {count_dropped:<12}  : {str(round(count_dropped / count * 100, 2)) + '%':<12}"
-                     f" : {count_dropped:<15} : {str(round(count_dropped_ep / count_ep * 100, 2)) + '%':<12}"
-                     f" : {count_dropped_ep:<10} : {str(round(count_dropped_ep / count_ep * 100, 2)) + '%':<12}"
-                     f" : {count_dropped_epw:<18} : {str(round(count_dropped_epw / count_epw * 100, 2)) + '%'}")
+    print(
+        Fore.RED + f"  Dropped         : {count_dropped:<12}  : {str(round(count_dropped / count * 100, 2)) + '%':<12}"
+                   f" : {count_dropped:<15} : {str(round(count_dropped_ep / count_ep * 100, 2)) + '%':<12}"
+                   f" : {count_dropped_ep:<10} : {str(round(count_dropped_ep / count_ep * 100, 2)) + '%':<12}"
+                   f" : {count_dropped_epw:<18} : {str(round(count_dropped_epw / count_epw * 100, 2)) + '%'}")
     print(Style.RESET_ALL, end="")
     print(f"  Plan to watch   : {count_planned:<12}  : {str(round(count_planned / count * 100, 2)) + '%':<12}"
           f" : {count_planned:<15} : {str(round(count_planned_ep / count_ep * 100, 2)) + '%':<12}"
@@ -187,7 +197,7 @@ if __name__ == "__main__":
     print_bare(count_watching, count_watched, count_hold, count_dropped, count_planned, count, "Total Anime: ")
     print_bare(count_watching, count_watched_season, count_hold, count_dropped, count_planned, count_season,
                "Total Seasons: ")
-    print_bare(count_watching_ep, count_watched_ep, count_dropped_ep, count_hold_ep, count_planned_ep, count_ep,
+    print_bare(count_watching_ep, count_watched_ep, count_hold_ep, count_dropped_ep, count_planned_ep, count_ep,
                "Total EP: ")
     print_bare(count_watching_epw, count_watched_epw, count_hold_epw, count_dropped_epw, count_planned_epw, count_epw,
                "Total EP Watched: ")
