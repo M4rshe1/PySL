@@ -12,3 +12,4 @@ env
 /downloader/downloads/
 /coverter/dist/scans/
 /Network/config/
+/ping_tools/graphs/

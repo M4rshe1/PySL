@@ -3,9 +3,8 @@ import tkinter as tk
 import tkinter.filedialog as filedialog
 import os
 import json
-
-
 from colorama import Fore, Style, Back
+
 
 animes = {"stats": {}, "faults": {"not_completely_watched": []}, "animes": {}}
 
@@ -113,7 +112,7 @@ if __name__ == "__main__":
             count_watched_ep += int(anime_ep)
             count_watched_epw += int(anime_epw)
             count_watched_season += 1
-        elif anime_status == "Watching":
+        if anime_status == "Watching":
             count_watching += 1
             count_watching_ep += int(anime_ep)
             count_watching_epw += int(anime_epw)
@@ -130,8 +129,8 @@ if __name__ == "__main__":
             count_hold_ep += int(anime_ep)
             count_hold_epw += int(anime_epw)
 
-    animes["stats"]["total"] = count
     animes["stats"]["status"] = {}
+    animes["stats"]["status"]["total"] = count
     animes["stats"]["status"]["completed"] = count_watched
     animes["stats"]["status"]["watching"] = count_watching
     animes["stats"]["status"]["plan to watch"] = count_planned
@@ -163,19 +162,20 @@ if __name__ == "__main__":
     print("------------------------------------------------------------------------------------------------------------"
           "-------------------------------------")
     print(
-        Fore.GREEN + f"  Watching        : {count_watching:<12}  : {str(round(count_watching / count * 100, 2)) + '%':<12}"
-                     f" : {count_watching:<15} : {str(round(count_watching_ep / count_ep * 100, 2)) + '%':<12}"
-                     f" : {count_watching_ep:<10} : {str(round(count_watching_ep / count_ep * 100, 2)) + '%':<12}"
-                     f" : {count_watching_epw:<18} : {str(round(count_watching_epw / count_epw * 100, 2)) + '%'}")
+        Fore.GREEN + f"  Watching        : {count_watching:<12}  :"
+                     f" {str(round(count_watching / count * 100, 2)) + '%':<12} : {count_watching:<15} :"
+                     f" {str(round(count_watching_ep / count_ep * 100, 2)) + '%':<12} : {count_watching_ep:<10} :"
+                     f" {str(round(count_watching_ep / count_ep * 100, 2)) + '%':<12} : {count_watching_epw:<18} :"
+                     f" {str(round(count_watching_epw / count_epw * 100, 2)) + '%'}")
     print(
         Fore.BLUE + f"  Completed       : {count_watched:<12}  : {str(round(count_watched / count * 100, 2)) + '%':<12}"
                     f" : {count_watched_season:<15} : {str(round(count_watched_ep / count_ep * 100, 2)) + '%':<12}"
                     f" : {count_watched_ep:<10} : {str(round(count_watched_ep / count_ep * 100, 2)) + '%':<12}"
                     f" : {count_watched_epw:<18} : {str(round(count_watched_epw / count_epw * 100, 2)) + '%'}")
     print(Fore.YELLOW + f"  On-hold         : {count_hold:<12}  : {str(round(count_hold / count * 100, 2)) + '%':<12}"
-                        f" : {count_hold:<15} : {str(round(count_hold_ep / count_ep * 100, 2)) + '%':<12} : {count_hold_ep:<10}"
-                        f" : {str(round(count_hold_ep / count_ep * 100, 2)) + '%':<12} : {count_hold_epw:<18}"
-                        f" : {str(round(count_hold_epw / count_epw * 100, 2)) + '%'}")
+                        f" : {count_hold:<15} : {str(round(count_hold_ep / count_ep * 100, 2)) + '%':<12} :"
+                        f" {count_hold_ep:<10} : {str(round(count_hold_ep / count_ep * 100, 2)) + '%':<12} :"
+                        f" {count_hold_epw:<18} : {str(round(count_hold_epw / count_epw * 100, 2)) + '%'}")
     print(
         Fore.RED + f"  Dropped         : {count_dropped:<12}  : {str(round(count_dropped / count * 100, 2)) + '%':<12}"
                    f" : {count_dropped:<15} : {str(round(count_dropped_ep / count_ep * 100, 2)) + '%':<12}"

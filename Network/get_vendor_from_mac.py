@@ -18,6 +18,6 @@ if __name__ == "__main__":
             print(e)
             continue
         mac_vendor = mac_addr[:8] + ":XX:XX:XX"
-        print(F"All {mac_vendor} belong to {vendor}")
-        input(f"Vendor of {mac_addr} is {vendor}")
+        input(F"All {mac_vendor} belong to {vendor}")
+        # input(f"Vendor of {mac_addr} is {vendor}")
         break
