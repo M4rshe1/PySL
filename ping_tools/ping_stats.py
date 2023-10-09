@@ -15,9 +15,9 @@ import tkinter as tk
 
 GRAPH_FILE = False
 GRAPH_DATA = True
-NO_RES_ELEMENTS = 4
 GRAPH_MS = False
 DEFAULT_DEVICE = "google.com"
+DELAY = 1  # Delay between pings in seconds
 # in seconds or Xs or Xm but always as a string
 # Xs = X seconds
 # Xm = X minutes
@@ -60,7 +60,7 @@ def ping_device(device: str, duration: int):
         end_time = start_time + duration
         res_time = []
         res_timestamp = []
-        print(f"Pinging {device} for {duration}s ({end_time - start_time:.0f}s")
+        print(f"Pinging {device} for {duration}s...")
         while time.time() < end_time:
             ping_time = time.time()
             result = subprocess.Popen(
@@ -88,7 +88,7 @@ def ping_device(device: str, duration: int):
                 end=""
             )
 
-            time.sleep(1)  # Wait for 1 second between pings
+            time.sleep(DELAY)
         print(
             f"\r{'#' * 100}| 100% / 0.00s {Fore.GREEN}{Style.BRIGHT}0{Style.RESET_ALL} "
             f"{Fore.YELLOW}0.00ms{Style.RESET_ALL} {Fore.BLUE}{received_count + lost_count}{Style.RESET_ALL}",
@@ -116,31 +116,29 @@ def ping_device(device: str, duration: int):
 
 
 if __name__ == "__main__":
+    redone = False
+    all_ping_results = []
     device_to_ping = (input(f"Enter device or IP address to ping (default: {DEFAULT_DEVICE}):\n>> ")
                       or DEFAULT_DEVICE)
     ping_duration = (input(f"Enter ping duration Xs or Xm (default: {DEFAULT_PING_DURATION}):\n>> ")
                      or str(DEFAULT_PING_DURATION))
     while True:
-        if device_to_ping.lower() == "load":
-            # print("Loading...")
-            file_to_load = select_file()[0]
-            with open(file_to_load, "r") as file:
-                ping_result = json.load(file)
-        else:
-            if ping_duration[-1] == "s":
-                ping_duration = int(ping_duration[:-1])
-            elif ping_duration[-1] == "m":
-                ping_duration = int(ping_duration[:-1]) * 60
-            elif ping_duration[-1].isnumeric():
-                ping_duration = int(ping_duration)
+        if not redone:
+            if device_to_ping.lower() == "load":
+                # print("Loading...")
+                file_to_load = select_file()[0]
+                with open(file_to_load, "r") as file:
+                    ping_result = json.load(file)
+            else:
+                if ping_duration[-1] == "s":
+                    ping_duration = int(ping_duration[:-1])
+                elif ping_duration[-1] == "m":
+                    ping_duration = int(ping_duration[:-1]) * 60
+                elif ping_duration[-1].isnumeric():
+                    ping_duration = int(ping_duration)
 
-            ping_result = ping_device(device_to_ping, ping_duration)
-            if GRAPH_DATA and not GRAPH_FILE:
-                with open(
-                        f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
-                ) as file:
-                    json.dump(ping_result, file, indent=4)
-
+        ping_result = ping_device(device_to_ping, ping_duration)
+        all_ping_results.append(ping_result)
         # if GRAPH_MS:
         #     print_graph_ms.print_graph_ms(ping_result)
         # if GRAPH_FILE:
@@ -150,8 +148,22 @@ if __name__ == "__main__":
         #     else:
         #         res_graph_time.print_graph_time(ping_result, graph_data=GRAPH_DATA, graph_file=GRAPH_FILE)
 
-        print_result.print_results(ping_result, device_to_ping, NO_RES_ELEMENTS)
+        print_result.print_results(device_to_ping, all_ping_results)
 
         redo = input("Ping again? (y/n)\n>> ")
         if redo.lower() == "n":
+            if redone:
+                with open(
+                        f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
+                ) as file:
+                    json.dump(all_ping_results, file, indent=4)
+            else:
+                if GRAPH_DATA and not GRAPH_FILE:
+                    with open(
+                            f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
+                    ) as file:
+                        json.dump(all_ping_results, file, indent=4)
             break
+        elif redo.lower() == "y" or redo == "":
+            redone = True
+            continue
