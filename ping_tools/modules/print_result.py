@@ -27,7 +27,7 @@ def print_results(device: str, all_results):
     for j, res in enumerate(all_results):
         for i in range(len(res["times"])):
             if res["times"][i] == 0:
-                response_graph[i].append(Fore.RED + "#      " + Style.RESET_ALL)
+                response_graph[i].append(Fore.RED + "0      " + Style.RESET_ALL)
             elif res["times"][i] < 10:
                 response_graph[i].append(Fore.GREEN + "#      " + Style.RESET_ALL)
             elif res["times"][i] < 20:
@@ -52,7 +52,7 @@ def print_results(device: str, all_results):
         print("   ", end="")
         for i in j["times"]:
             if i == 0:
-                print(Fore.RED + "####" + Style.RESET_ALL, end="")
+                print(Fore.RED + "0000" + Style.RESET_ALL, end="")
             elif i < 30:
                 print(Fore.GREEN + "#" + Style.RESET_ALL, end="")
             elif i < 120:

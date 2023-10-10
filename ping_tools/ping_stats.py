@@ -89,7 +89,7 @@ def calc_bar_width(start, end, times):
     completed = split_array_into_three_pieces(completed, len(times))
     for i in range(len(times)):
         if times[i] == 0:
-            completed[i] = Fore.RED + completed[i] + Style.RESET_ALL
+            completed[i] = Fore.RED + completed[i].replace("#", "0") + Style.RESET_ALL
         elif times[i] < 30:
             completed[i] = Fore.GREEN + completed[i] + Style.RESET_ALL
         elif times[i] < 120:
