@@ -8,6 +8,7 @@ import json
 import datetime
 from tkinter import filedialog
 import tkinter as tk
+import os
 
 # ------------------------------------------------------- #
 #                   Settings / Variables                  #
@@ -31,19 +32,71 @@ DEFAULT_PING_DURATION = "2m"
 
 
 def select_file():
+    if not os.path.exists("graphs"):
+        os.mkdir("graphs")
+
     root = tk.Tk()
     root.withdraw()
     # multiple files can be selected
     file_path = filedialog.askopenfilenames(title="Select a file",
-                                            filetypes=(("JSON", "*.json"), ("All files", "*.*")))
+                                            filetypes=(("JSON", "*.json"), ("All files", "*.*")),
+                                            initialdir="graphs")
 
     # kill the program if no file is selected
     if file_path == "":
         print("No file selected")
-        exit()
+        return []
     else:
         # print(file_path)
         return file_path
+
+
+def split_array_into_three_pieces(arr, splits):
+    """Split an array into three pieces as close to equal as possible."""
+    length = len(arr)
+    chunk_size = length // splits
+    remainder = length % splits
+
+    result = []
+    start = 0
+
+    for _ in range(splits):
+        if remainder > 0:
+            end = start + chunk_size + 1
+            remainder -= 1
+        else:
+            end = start + chunk_size
+
+        result.append(arr[start:end])
+        start = end
+
+    return result
+
+
+def calc_bar_width(start, end, times):
+    # Calculate the completion percentage
+    completion_percentage = int((time.time() - start) / (end - start) * 100)
+
+    # Ensure that the completion percentage is between 0 and 100
+    completion_percentage = max(0, min(100, completion_percentage))
+
+    # Create the completed part of the progress bar
+    completed = "#" * completion_percentage
+
+    # Ensure that the completed string is exactly 100 characters long
+    completed = completed.ljust(100)
+
+    completed = split_array_into_three_pieces(completed, len(times))
+    for i in range(len(times)):
+        if times[i] == 0:
+            completed[i] = Fore.RED + completed[i] + Style.RESET_ALL
+        elif times[i] < 30:
+            completed[i] = Fore.GREEN + completed[i] + Style.RESET_ALL
+        elif times[i] < 120:
+            completed[i] = Fore.YELLOW + completed[i] + Style.RESET_ALL
+        else:
+            completed[i] = Fore.RED + completed[i] + Style.RESET_ALL
+    return "".join(completed)
 
 
 def ping_device(device: str, duration: int):
@@ -51,7 +104,7 @@ def ping_device(device: str, duration: int):
     Ping a device for a specified duration and return the results
     :param device: The device or IP address to ping
     :param duration: the duration of the ping session in seconds
-    :return: a dictionary containing the ping results
+    :return: an array containing the ping results
     """
     try:
         received_count = 0
@@ -60,6 +113,8 @@ def ping_device(device: str, duration: int):
         end_time = start_time + duration
         res_time = []
         res_timestamp = []
+        starttime = time.time()
+
         print(f"Pinging {device} for {duration}s...")
         while time.time() < end_time:
             ping_time = time.time()
@@ -79,8 +134,11 @@ def ping_device(device: str, duration: int):
                 lost_count += 1
                 res_time.append(0)
             res_timestamp.append(time.time() - start_time)
+
+            bar = calc_bar_width(start_time, end_time, res_time)
+
             print(
-                f"\r{int((time.time() - start_time) / (end_time - start_time) * 100) * '#':<100}| "
+                f"\r{bar:<100}| "
                 f"{int((time.time() - start_time) / (end_time - start_time) * 100):>3}% / "
                 f"{end_time - time.time():.0f}s {Fore.GREEN}{Style.BRIGHT if result.returncode == 0 else Fore.RED}"
                 f"{result.returncode}{Style.RESET_ALL} {Fore.YELLOW}{req_time * 1000:.2f}ms{Style.RESET_ALL} "
@@ -89,8 +147,9 @@ def ping_device(device: str, duration: int):
             )
 
             time.sleep(DELAY)
+        bar = calc_bar_width(start_time, end_time, res_time)
         print(
-            f"\r{'#' * 100}| 100% / 0.00s {Fore.GREEN}{Style.BRIGHT}0{Style.RESET_ALL} "
+            f"\r{bar}| 100% / 0.00s {Fore.GREEN}{Style.BRIGHT}0{Style.RESET_ALL} "
             f"{Fore.YELLOW}0.00ms{Style.RESET_ALL} {Fore.BLUE}{received_count + lost_count}{Style.RESET_ALL}",
             end=""
         )
@@ -102,8 +161,12 @@ def ping_device(device: str, duration: int):
             "loss": lost_count / (received_count + lost_count) * 100,
             "min": min([x for x in res_time if x > 0]),
             "max": max(res_time),
+            "start-time": starttime,
+            "device": device,
+            "end-time": time.time(),
             "times": res_time,
-            "timestamps": res_timestamp
+            "timestamps": res_timestamp,
+            "duration": duration
         }
 
     except KeyboardInterrupt:
@@ -116,6 +179,18 @@ def ping_device(device: str, duration: int):
 
 
 if __name__ == "__main__":
+    if input("Enter l to load a file.\n>> ").lower() == "l":
+        json_file = select_file()
+        if len(json_file) < 1:
+            pass
+        with open(json_file[0], "r") as file:
+            ping_result = json.load(file)
+        print_result.print_results(json_file[0], ping_result)
+        input("Press enter to exit...")
+        exit()
+    else:
+        pass
+
     redone = False
     all_ping_results = []
     device_to_ping = (input(f"Enter device or IP address to ping (default: {DEFAULT_DEVICE}):\n>> ")
@@ -153,12 +228,13 @@ if __name__ == "__main__":
         redo = input("Ping again? (y/n)\n>> ")
         if redo.lower() == "n":
             if redone:
-                with open(
-                        f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
-                ) as file:
-                    json.dump(all_ping_results, file, indent=4)
+                if GRAPH_DATA:
+                    with open(
+                            f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
+                    ) as file:
+                        json.dump(all_ping_results, file, indent=4)
             else:
-                if GRAPH_DATA and not GRAPH_FILE:
+                if GRAPH_DATA:
                     with open(
                             f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
                     ) as file:

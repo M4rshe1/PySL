@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from colorama import Fore, Style
 
 
@@ -5,15 +7,23 @@ def print_results(device: str, all_results):
     # print(all_results)
     # get the longest times element in all_results
     longest = all_results[0]
-    res_times = all_results[0]
     for i in all_results:
-        if len(i["times"]) > len(res_times["times"]):
+        if len(i["times"]) > len(longest["times"]):
             longest = i
 
     response_graph = [[" "] for _ in range(len(longest["times"]))]
     # print(response_graph)
 
-    print("\nResponse Graph (0 <10 <20 <30 <60 <120 <):")
+    print("\nResponse Graph ((", end="")
+    print(Fore.RED + "0" + Style.RESET_ALL, end="")
+    print(Fore.GREEN + " <10" + Style.RESET_ALL, end="")
+    print(")", end="")
+    print(Fore.GREEN + " <20 <30" + Style.RESET_ALL, end="")
+    print(Fore.YELLOW + " <60" + Style.RESET_ALL, end="")
+    print(Fore.RED + " <120" + Style.RESET_ALL, end="")
+    print(Fore.RED + " <" + Style.RESET_ALL, end="")
+    print(")")
+
     for j, res in enumerate(all_results):
         for i in range(len(res["times"])):
             if res["times"][i] == 0:
@@ -30,7 +40,7 @@ def print_results(device: str, all_results):
                 response_graph[i].append(Fore.YELLOW + "#####  " + Style.RESET_ALL)
             else:
                 response_graph[i].append(Fore.RED + "###### " + Style.RESET_ALL)
-            response_graph[i].append(f" : {res['times'][i]}ms")
+            response_graph[i].append(f" : {(str(res['times'][i]) + 'ms'):<11}")
             if not len(all_results) == 1 and not j == len(all_results) - 1:
                 response_graph[i].append("  |  ")
 
@@ -79,10 +89,20 @@ def print_results(device: str, all_results):
             for i in range(len(summary)):
                 summary[i] += " : "
 
+    start_time = datetime.fromtimestamp(round(all_results[0]["start-time"], 0))
+    end_time = datetime.fromtimestamp(round(all_results[0]["end-time"], 0))
+    time_diff = end_time - start_time
     print("\n", end="")
     print(f"\nPing results for {device}:")
     for i in summary:
         print(i)
+    print("\n", end="")
+    print(f"  Start time              : {start_time.strftime('%Y.%m.%d %H:%M:%S')}")
+    print(f"  End time                : {end_time.strftime('%Y.%m.%d %H:%M:%S')}")
+    print(f"  Time                    : "
+          f"{str(datetime.utcfromtimestamp(time_diff.total_seconds()).strftime('%HH:%MM:%SS'))}")
+    print(f"  Device                  : {all_results[0]['device']}")
+    print(f"  Ping Duration           : {all_results[0]['duration']}s")
 
     return response_graph
 
