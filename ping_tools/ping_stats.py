@@ -51,7 +51,7 @@ def select_file():
         return file_path
 
 
-def split_array_into_three_pieces(arr, splits):
+def split_array_into_splits(arr, splits):
     """Split an array into three pieces as close to equal as possible."""
     length = len(arr)
     chunk_size = length // splits
@@ -86,7 +86,7 @@ def calc_bar_width(start, end, times):
     # Ensure that the completed string is exactly 100 characters long
     completed = completed.ljust(100)
 
-    completed = split_array_into_three_pieces(completed, len(times))
+    completed = split_array_into_splits(completed, len(times))
     for i in range(len(times)):
         if times[i] == 0:
             completed[i] = Fore.RED + completed[i].replace("#", "0") + Style.RESET_ALL
