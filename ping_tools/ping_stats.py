@@ -1,8 +1,7 @@
 import subprocess
 import time
 from colorama import Fore, Style
-# import modules.res_over_time_graph as res_graph_time
-# import modules.print_graph_ms as print_graph_ms
+import modules.gen_graph as gen_graph
 import modules.print_result as print_result
 import json
 import datetime
@@ -16,7 +15,6 @@ import os
 
 GRAPH_FILE = False
 GRAPH_DATA = True
-GRAPH_MS = False
 DEFAULT_DEVICE = "google.com"
 DELAY = 1  # Delay between pings in seconds
 # in seconds or Xs or Xm but always as a string
@@ -117,19 +115,22 @@ def ping_device(device: str, duration: int):
 
         print(f"Pinging {device} for {duration}s...")
         while time.time() < end_time:
-            ping_time = time.time()
             result = subprocess.Popen(
                 ['ping', '-n', '1', device],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE
             )
-            # print(result)
-            result.communicate()
-            req_time = time.time() - ping_time
 
+            result.communicate()
+            req_time = 0
             if result.returncode == 0:
+                output = int(str(result.communicate()[0]).split("Maximum = ")[-1].split("ms")[0])
                 received_count += 1
-                res_time.append(round(req_time * 1000))
+                if output == 0:
+                    res_time.append(1)
+                    output = 1
+                req_time = output
+                res_time.append(round(req_time))
             else:
                 lost_count += 1
                 res_time.append(0)
@@ -141,7 +142,7 @@ def ping_device(device: str, duration: int):
                 f"\r{bar:<100}| "
                 f"{int((time.time() - start_time) / (end_time - start_time) * 100):>3}% / "
                 f"{end_time - time.time():.0f}s {Fore.GREEN}{Style.BRIGHT if result.returncode == 0 else Fore.RED}"
-                f"{result.returncode}{Style.RESET_ALL} {Fore.YELLOW}{req_time * 1000:.2f}ms{Style.RESET_ALL} "
+                f"{result.returncode}{Style.RESET_ALL} {Fore.YELLOW}{req_time}ms{Style.RESET_ALL} "
                 f"{Fore.BLUE}{received_count + lost_count}{Style.RESET_ALL}",
                 end=""
             )
@@ -153,6 +154,7 @@ def ping_device(device: str, duration: int):
             f"{Fore.YELLOW}0.00ms{Style.RESET_ALL} {Fore.BLUE}{received_count + lost_count}{Style.RESET_ALL}",
             end=""
         )
+
         print("\nPing session completed.")
         return {
             "req": received_count + lost_count,
@@ -161,12 +163,12 @@ def ping_device(device: str, duration: int):
             "loss": lost_count / (received_count + lost_count) * 100,
             "min": min([x for x in res_time if x > 0]),
             "max": max(res_time),
-            "start-time": starttime,
+            "starttime": starttime,
             "device": device,
-            "end-time": time.time(),
+            "endtime": time.time(),
             "times": res_time,
             "timestamps": res_timestamp,
-            "duration": duration
+            "pingtime": duration
         }
 
     except KeyboardInterrupt:
@@ -186,7 +188,10 @@ if __name__ == "__main__":
         with open(json_file[0], "r") as file:
             ping_result = json.load(file)
         print_result.print_results(json_file[0], ping_result)
-        input("Press enter to exit...")
+        if input("Enter g to generate a graph.\n>> ") == "g":
+            graph_file_name = json_file[0].split("/")[-1].split(".")[0].replace("result", "graph")
+            gen_graph.gen_graph(ping_result, graph_file_name + ".png")
+
         exit()
     else:
         pass
@@ -214,31 +219,19 @@ if __name__ == "__main__":
 
         ping_result = ping_device(device_to_ping, ping_duration)
         all_ping_results.append(ping_result)
-        # if GRAPH_MS:
-        #     print_graph_ms.print_graph_ms(ping_result)
-        # if GRAPH_FILE:
-        #     file = input("Enter filename (default: responses_over_time-[datatime].png):\n>> ") or None
-        #     if file:
-        #         res_graph_time.print_graph_time(ping_result, file, GRAPH_FILE, GRAPH_DATA)
-        #     else:
-        #         res_graph_time.print_graph_time(ping_result, graph_data=GRAPH_DATA, graph_file=GRAPH_FILE)
-
         print_result.print_results(device_to_ping, all_ping_results)
 
         redo = input("Ping again? (y/n)\n>> ")
         if redo.lower() == "n":
-            if redone:
-                if GRAPH_DATA:
-                    with open(
-                            f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
-                    ) as file:
-                        json.dump(all_ping_results, file, indent=4)
-            else:
-                if GRAPH_DATA:
-                    with open(
-                            f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
-                    ) as file:
-                        json.dump(all_ping_results, file, indent=4)
+            if GRAPH_DATA:
+                with open(
+                        f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
+                ) as file:
+                    json.dump(all_ping_results, file, indent=4)
+            if GRAPH_FILE:
+                gen_graph.gen_graph(all_ping_results,
+                                    f"graphs/ping_graph_"
+                                    f"{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.png")
             break
         elif redo.lower() == "y" or redo == "":
             redone = True

@@ -18,8 +18,8 @@ def print_results(device: str, all_results):
     print(Fore.RED + "0" + Style.RESET_ALL, end="")
     print(Fore.GREEN + " <10" + Style.RESET_ALL, end="")
     print(")", end="")
-    print(Fore.GREEN + " <20 <30" + Style.RESET_ALL, end="")
-    print(Fore.YELLOW + " <60" + Style.RESET_ALL, end="")
+    print(Fore.GREEN + " <25" + Style.RESET_ALL, end="")
+    print(Fore.YELLOW + " <40 <60" + Style.RESET_ALL, end="")
     print(Fore.RED + " <120" + Style.RESET_ALL, end="")
     print(Fore.RED + " <" + Style.RESET_ALL, end="")
     print(")")
@@ -30,9 +30,9 @@ def print_results(device: str, all_results):
                 response_graph[i].append(Fore.RED + "0      " + Style.RESET_ALL)
             elif res["times"][i] < 10:
                 response_graph[i].append(Fore.GREEN + "#      " + Style.RESET_ALL)
-            elif res["times"][i] < 20:
+            elif res["times"][i] < 25:
                 response_graph[i].append(Fore.GREEN + "##     " + Style.RESET_ALL)
-            elif res["times"][i] < 30:
+            elif res["times"][i] < 40:
                 response_graph[i].append(Fore.GREEN + "###    " + Style.RESET_ALL)
             elif res["times"][i] < 60:
                 response_graph[i].append(Fore.YELLOW + "####   " + Style.RESET_ALL)
@@ -53,7 +53,7 @@ def print_results(device: str, all_results):
         for i in j["times"]:
             if i == 0:
                 print(Fore.RED + "0000" + Style.RESET_ALL, end="")
-            elif i < 30:
+            elif i < 40:
                 print(Fore.GREEN + "#" + Style.RESET_ALL, end="")
             elif i < 120:
                 print(Fore.YELLOW + "#" + Style.RESET_ALL, end="")
@@ -78,19 +78,28 @@ def print_results(device: str, all_results):
     ]
 
     for k, j in enumerate(all_results):
+        # calculate average but ignore 0s
+        avg = 0
+        avg_count = 0
+        for i in j["times"]:
+            if i != 0:
+                avg += i
+                avg_count += 1
+        avg = round(avg / avg_count, 2)
+
         summary[0] += f"{j['req']:<10}"
         summary[1] += f"{j['res']:<10}"
         summary[2] += f"{j['lost']:<10}"
         summary[3] += f"{str(round(j['loss'], 2)) + '%':<10}"
         summary[4] += f"{j['min']:<10}"
-        summary[5] += f"{str(round(sum(j['times']) / len(j['times']), 2)) + 'ms':<10}"
+        summary[5] += f"{str(avg) + 'ms':<10}"
         summary[6] += f"{j['max']:<10}"
         if not len(all_results) == 1 and not k == len(all_results) - 1:
             for i in range(len(summary)):
                 summary[i] += " : "
 
-    start_time = datetime.fromtimestamp(round(all_results[0]["start-time"], 0))
-    end_time = datetime.fromtimestamp(round(all_results[0]["end-time"], 0))
+    start_time = datetime.fromtimestamp(round(all_results[0]["starttime"], 0))
+    end_time = datetime.fromtimestamp(round(all_results[0]["endtime"], 0))
     time_diff = end_time - start_time
     print("\n", end="")
     print(f"\nPing results for {device}:")
@@ -102,7 +111,7 @@ def print_results(device: str, all_results):
     print(f"  Time                    : "
           f"{str(datetime.utcfromtimestamp(time_diff.total_seconds()).strftime('%HH:%MM:%SS'))}")
     print(f"  Device                  : {all_results[0]['device']}")
-    print(f"  Ping Duration           : {all_results[0]['duration']}s")
+    print(f"  Ping Duration           : {all_results[0]['pingtime']}s")
 
     return response_graph
 

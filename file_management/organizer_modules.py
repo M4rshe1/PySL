@@ -92,5 +92,5 @@ EXCLUDE = ["desktop.ini", "Thumbs.db", "Thumbs.db:encryptable", "Thumbs.db:encry
            SORTED_FOLDER]
 
 if __name__ == "__main__":
-    print("This is a module for file_management/main.py")
+    print("This is a module for file_management/app.py")
     exit()
