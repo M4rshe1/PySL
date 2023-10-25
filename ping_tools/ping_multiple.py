@@ -77,7 +77,7 @@ if __name__ == '__main__':
 
         print(f"\n\n\n\n\n\n\{'name':<20} {'IP':<15} {'Status':<15}")
         for i in range(len(ips["devices"])):
-            print(results[i])
+            # print(results[i])
             if results[i]:
                 print(f"{Fore.GREEN}{ips['devices'][i]['name']:<20} {ips['devices'][i]['ip']:<15} UP{Style.RESET_ALL}")
             else:
@@ -88,6 +88,6 @@ if __name__ == '__main__':
             print(f"\r{int(i / SLEEP_TIME * 100) * '#':<100}| {SLEEP_TIME - i:>3}s", end="")
             time.sleep(1)
         print(f"\r{'#'*100}| 0s")
-        print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+        print("\n" * 100)
 
 

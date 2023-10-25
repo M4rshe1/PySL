@@ -156,6 +156,15 @@ def ping_device(device: str, duration: int):
         )
 
         print("\nPing session completed.")
+
+        avg = 0
+        avg_count = 0
+        for i in res_time:
+            if i != 0:
+                avg += i
+                avg_count += 1
+        avg = round(avg / avg_count, 2)
+
         return {
             "req": received_count + lost_count,
             "res": received_count,
@@ -168,7 +177,8 @@ def ping_device(device: str, duration: int):
             "endtime": time.time(),
             "times": res_time,
             "timestamps": res_timestamp,
-            "pingtime": duration
+            "pingtime": duration,
+            "avg": avg
         }
 
     except KeyboardInterrupt:

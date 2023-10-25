@@ -13,3 +13,4 @@ env
 /coverter/dist/scans/
 /Network/config/
 /ping_tools/graphs/
+/ping_tools/API_HUB/graphs/

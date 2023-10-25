@@ -41,12 +41,12 @@ if __name__ == "__main__":
             print("Counting files...")
             count = count_files(folder)
             print("\n" * 20)
-            print("CATEGORY  : COUNT")
-            print("-" * 20)
+            print("CATEGORY  : COUNT   : SIZE")
+            print("-" * 28)
             for k, v in count.items():
-                print(f"{k:<10}: {v['count']}")
+                print(f"{k:<10}: {v['count']:<7} : {v['size'] / 1000000 }MB")
             print("-" * 20)
-            print("**TOTAL** : " + str(sum([v["count"] for k, v in count.items()])))
+            print(f"TOTAL     : {str(sum([v['count'] for k, v in count.items()])):<7} : {str(sum([v['size'] for k, v in count.items()]) / 1000000)} MB")
             print("\n")
         elif choice == "exit":
             exit()

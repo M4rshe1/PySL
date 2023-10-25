@@ -9,7 +9,8 @@ def count_files(src_path):
     for c in categories:
         if not os.path.exists(src_path + "/" + c):
             continue
-        count.update({c: {"count": 0}})
+        count.update({c: {"count": 0, "size": 0}})
+        count[c]["size"] = os.path.getsize(src_path + "/" + c)
         for item in os.listdir(src_path + "/" + c):
             item_path = src_path + "/" + c + "/" + item
             if os.path.isfile(item_path):
@@ -18,7 +19,7 @@ def count_files(src_path):
                 count["FOLDER"]["count"] += 1
     # order by count
 
-    count = dict(sorted(count.items(), key=lambda item: item[1]["count"], reverse=True))
+    count = dict(sorted(count.items(), key=lambda items: items[1]["count"], reverse=True))
     # Add total count
     # count = {"**TOTAL**": {"count": sum([v["count"] for k, v in count.items()])}, **count}
     return count
@@ -27,5 +28,5 @@ def count_files(src_path):
 if __name__ == "__main__":
     counted = count_files(select_folder())
     for k, v in counted.items():
-        print(f"{k:<10}: {v['count']}")
+        print(f"{k:<10}: {v['count']:<7} files, {v['size'] / 1000000 } MB")
     input("Press Enter to continue...")
