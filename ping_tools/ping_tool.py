@@ -4,7 +4,6 @@ from colorama import Fore, Style
 import modules.gen_graph as gen_graph
 import modules.print_result as print_result
 import json
-import datetime
 from tkinter import filedialog
 import tkinter as tk
 import os
@@ -30,6 +29,26 @@ DEFAULT_PING_DURATION = "2m"
 
 
 def select_file():
+    if not os.path.exists("graphs"):
+        os.mkdir("graphs")
+
+    root = tk.Tk()
+    root.withdraw()
+    # multiple files can be selected
+    file_path = filedialog.askopenfilename(title="Select a file",
+                                           filetypes=(("JSON", "*.json"), ("All files", "*.*")),
+                                           initialdir="graphs")
+
+    # kill the program if no file is selected
+    if file_path == "":
+        print("No file selected")
+        return []
+    else:
+        # print(file_path)
+        return file_path
+
+
+def select_files():
     if not os.path.exists("graphs"):
         os.mkdir("graphs")
 
@@ -191,58 +210,83 @@ def ping_device(device: str, duration: int):
 
 
 if __name__ == "__main__":
-    if input("Enter l to load a file.\n>> ").lower() == "l":
-        json_file = select_file()
-        if len(json_file) < 1:
-            pass
-        with open(json_file[0], "r") as file:
-            ping_result = json.load(file)
-        print_result.print_results(json_file[0], ping_result)
-        if input("Enter g to generate a graph.\n>> ") == "g":
-            graph_file_name = json_file[0].split("/")[-1].split(".")[0].replace("result", "graph")
-            gen_graph.gen_graph(ping_result, graph_file_name + ".png")
 
-        exit()
+    print(""
+          " _____ _               _______          _\n"
+          "|  __ (_)             |__   __|        | |\n"
+          "| |__) | _ __   __ _     | | ___   ___ | |\n"
+          "|  ___/ | '_ \ / _' |    | |/ _ \ / _ \| |\n"
+          "| |   | | | | | (_| |    | | (_) | (_) | |\n"
+          "|_|   |_|_| |_|\__, |    |_|\___/ \___/|_|\n"
+          "                __/ |\n"
+          "               |___/\n"
+          )
+    print("****************************************************************")
+    print("* Ping Tool by Colin Heggli 2023                               *")
+    print("* https://colin.heggli.dev                                     *")
+    print("* https;//github.com/M4rshe1                                   *")
+    print("****************************************************************")
+    print("")
+    print("")
+    print("What would you like to do?")
+    print("  p - Ping a device")
+    print("  l - Load a graph from a file")
+    print("  c - continue a previous ping session")
+    print("  g - generate a graph")
+    print("  m - merge ping results")
+    print("  s - split results")
+    choose = input(">> ")
+    all_ping_data = []
+    if choose == "l":
+        file_path = select_file()
+        if not file_path:
+            print("No file selected")
+            exit()
+        with open(file_path) as f:
+            all_ping_data = json.load(f)
+    elif choose == "c":
+        file_path = select_file()
+        if not file_path:
+            print("No file selected")
+            exit()
+        with open(file_path) as f:
+            all_ping_data = json.load(f)
+        device = all_ping_data[0]["device"]
+        duration = all_ping_data[0]["pingtime"]
+        all_ping_data.append(ping_device(device, duration))
+    elif choose == "p":
+        device = input(f"Device to ping, Default ({DEFAULT_DEVICE}): ")
+        duration = input(f"Duration of ping session, Default ({DEFAULT_PING_DURATION}): ")
+        all_ping_data.append(ping_device(device, int(duration)))
+    elif choose == "g":
+        file_path = select_files()
+        if not file_path:
+            print("No file selected")
+            exit()
+        for file in file_path:
+            with open(file) as f:
+                all_ping_data.append(json.load(f))
+        gen_graph.gen_graph(all_ping_data, f"graphs/{all_ping_data[0]['starttime'].replace(':', '_')}graph")
+    elif choose == "m":
+        file_path = select_files()
+        if not file_path:
+            print("No file selected")
+            exit()
+        for file in file_path:
+            with open(file) as f:
+                all_ping_data.append(json.load(f))
+        print_result.print_results(all_ping_data)
+    elif choose == "s":
+        file_path = select_file()
+        filename = file_path.split("/")[-1]
+        if not file_path:
+            print("No file selected")
+            exit()
+        with open(file_path) as f:
+            all_ping_data = json.load(f)
+            for i in all_ping_data:
+                with open(f"{filename}/split_{i['starttime'].replace(':', '_')}.json", "w") as k:
+                    json.dump([i], k)
     else:
-        pass
-
-    redone = False
-    all_ping_results = []
-    device_to_ping = (input(f"Enter device or IP address to ping (default: {DEFAULT_DEVICE}):\n>> ")
-                      or DEFAULT_DEVICE)
-    ping_duration = (input(f"Enter ping duration Xs or Xm (default: {DEFAULT_PING_DURATION}):\n>> ")
-                     or str(DEFAULT_PING_DURATION))
-    while True:
-        if not redone:
-            if device_to_ping.lower() == "load":
-                # print("Loading...")
-                file_to_load = select_file()[0]
-                with open(file_to_load, "r") as file:
-                    ping_result = json.load(file)
-            else:
-                if ping_duration[-1] == "s":
-                    ping_duration = int(ping_duration[:-1])
-                elif ping_duration[-1] == "m":
-                    ping_duration = int(ping_duration[:-1]) * 60
-                elif ping_duration[-1].isnumeric():
-                    ping_duration = int(ping_duration)
-
-        ping_result = ping_device(device_to_ping, ping_duration)
-        all_ping_results.append(ping_result)
-        print_result.print_results(device_to_ping, all_ping_results)
-
-        redo = input("Ping again? (y/n)\n>> ")
-        if redo.lower() == "n":
-            if GRAPH_DATA:
-                with open(
-                        f"graphs/ping_data_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.json", "w"
-                ) as file:
-                    json.dump(all_ping_results, file, indent=4)
-            if GRAPH_FILE:
-                gen_graph.gen_graph(all_ping_results,
-                                    f"graphs/ping_graph_"
-                                    f"{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.png")
-            break
-        elif redo.lower() == "y" or redo == "":
-            redone = True
-            continue
+        print("Invalid choice")
+        exit()
