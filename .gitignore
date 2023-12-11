@@ -5,12 +5,11 @@
 env
 *.spec
 /coverter/coverter/
-/coverter/coverter/*.spec
 /coverter/images/
 /Network/scans/
-/coverter/build/
 /downloader/downloads/
 /coverter/dist/scans/
 /Network/config/
 /ping_tools/graphs/
 /ping_tools/API_HUB/graphs/
+/py2exe/build/

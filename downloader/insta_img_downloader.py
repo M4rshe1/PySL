@@ -17,16 +17,16 @@ user = os.getlogin()
 
 
 def find_image_url(post_link):
-    chrome_profile_directory = f"C:/Users/{user}/AppData/Local/Google/Chrome/User Data/"
-
-    # Create ChromeOptions object and set the profile directory
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("user-data-dir=" + chrome_profile_directory)
-
-    # Initialize the WebDriver with the custom ChromeOptions using 'options' parameter
-    driver = webdriver.Chrome(options=chrome_options)
-
     try:
+        chrome_profile_directory = f"C:/Users/{user}/AppData/Local/Google/Chrome/User Data/"
+
+        # Create ChromeOptions object and set the profile directory
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument("user-data-dir=" + chrome_profile_directory)
+
+        # Initialize the WebDriver with the custom ChromeOptions using 'options' parameter
+        driver = webdriver.Chrome(options=chrome_options)
+
         # Open the specified URL
         driver.get(post_link)
 
@@ -52,9 +52,14 @@ def find_image_url(post_link):
         # Print the result
         print("Result of JavaScript injection:", img_src)
         return img_src
+    except Exception as e:
+        print(e)
     finally:
-        # Close the browser
-        driver.quit()
+        try:
+            # Close the browser
+            driver.quit()
+        except NameError:
+            pass
 
 
 def download_image(file_url, set_file_name):
