@@ -36,7 +36,7 @@ def rounded_percentage(value, total):
     return round(percentage)
 
 
-def print_bare(watching, watched, hold, dropped, planned, total, title):
+def print_bar(watching, watched, hold, dropped, planned, total, title):
     print()
     print(title)
 
@@ -194,12 +194,12 @@ if __name__ == "__main__":
           f" : {str(round(count_epw / count_epw * 100, 2)) + '%'}")
     print("------------------------------------------------------------------------------------------------------------"
           "-------------------------------------")
-    print_bare(count_watching, count_watched, count_hold, count_dropped, count_planned, count, "Total Anime: ")
-    print_bare(count_watching, count_watched_season, count_hold, count_dropped, count_planned, count_season,
+    print_bar(count_watching, count_watched, count_hold, count_dropped, count_planned, count, "Total Anime: ")
+    print_bar(count_watching, count_watched_season, count_hold, count_dropped, count_planned, count_season,
                "Total Seasons: ")
-    print_bare(count_watching_ep, count_watched_ep, count_hold_ep, count_dropped_ep, count_planned_ep, count_ep,
+    print_bar(count_watching_ep, count_watched_ep, count_hold_ep, count_dropped_ep, count_planned_ep, count_ep,
                "Total EP: ")
-    print_bare(count_watching_epw, count_watched_epw, count_hold_epw, count_dropped_epw, count_planned_epw, count_epw,
+    print_bar(count_watching_epw, count_watched_epw, count_hold_epw, count_dropped_epw, count_planned_epw, count_epw,
                "Total EP Watched: ")
 
     output = json.dumps(animes, indent=4)

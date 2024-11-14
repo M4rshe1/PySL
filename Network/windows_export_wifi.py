@@ -5,10 +5,9 @@ import csv
 
 def export_profiles(mode):
     key_word = ""
-    if mode == "e":
-        key_word = "key value"
-    if mode == "g":
-        key_word = "Schlsselinhalt"
+    language = (subprocess.check_output(["Get-WinSystemLocale", "|", "convertTo-Json", "-depth", "5"])
+                .decode('utf-8', errors='ignore'))
+    print(language)
 
     # Get all Wi-Fi profiles
     data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8', errors='ignore').split('\n')
@@ -18,13 +17,12 @@ def export_profiles(mode):
                                                             errors='ignore').strip() + "-wifi-passwords.csv"
 
     # delete file if it exists
-    if os.path.exists("scans/" + filename):
-        os.remove("scans/" + filename)
+    if os.path.exists("./scans/" + filename):
+        os.remove("./scans/" + filename)
     print("---------------------------------------")
     # Iterate through the profiles and retrieve their passwords
 
-    if not os.path.exists("scans/" + filename):
-        csvfile = open("scans/" + filename, "w", newline="")
+    with open("./scans/" + filename, "w", newline="") as csvfile:
         fieldnames = ['profile', 'password']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=";")
         writer.writeheader()
