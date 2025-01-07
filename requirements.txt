@@ -3,7 +3,7 @@ pandas==2.1.1
 python-nmap~=0.7.1
 network~=0.1
 pyinstaller==6.0.0
-Pillow==10.2.0
+Pillow==10.3.0
 BeautifulSoup4==4.12.2
 requests==2.31.0
 webdriver-manager==4.0.1
